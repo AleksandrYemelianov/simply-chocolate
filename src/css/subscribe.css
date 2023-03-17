@@ -52,3 +52,40 @@
 .sibscribe-btn:hover {
     background-color: #f2bd1d;
 }
+
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    .sibscribe-section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+        background-color: grey;
+    }
+
+    .sibscribe-title {
+        width: 378px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        
+    }
+
+    .sibscribe-text {
+        width: 467px;
+        margin: auto;
+        margin-bottom: 24px;
+        color:#FFFFFF;
+    }
+
+    .sibscribe-btn {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-family: inherit;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+    
