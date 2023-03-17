@@ -1,0 +1,40 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 14px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  width: 144px;
+  height: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+}
+
+.accent-logo {
+  font-style: italic;
+}
+
+.header-list-nav {
+  display: none;
+}
+
+.header-list-soc {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+}
