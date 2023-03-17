@@ -22,6 +22,7 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  color: var(--primary-dark-color);
 }
 
 .accent-logo {
@@ -36,5 +37,75 @@
   display: none;
 }
 
+/* ---------- MOB MENU --------------- */
+
+.mob-menu {
+  position: relative;
+  width: 220px;
+  height: 100%;
+  color: var(--primary-light-color);
+  background: var(--primary-background-color);
+}
+
+.menu-container {
+  height: 100%;
+  width: 220px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-close-menu {
+  margin-left: auto;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 24px;
+  }
+
+  .header-menu-icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-bottom: 32px;
+  }
+
+  .header-logo {
+    margin-right: 188px;
+    width: 185px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .header-list-nav {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    display: flex;
+    gap: 24px;
+    margin-right: 137px;
+  }
+
+  .header-list-soc {
+    display: flex;
+    gap: 18px;
+  }
 }
