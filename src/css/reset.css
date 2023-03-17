@@ -10,6 +10,14 @@ body {
   margin: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
