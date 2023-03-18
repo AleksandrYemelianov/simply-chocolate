@@ -83,10 +83,14 @@
 
 @media screen and (min-width: 1200px) {
   .item-top-sellers {
-    width: calc((100% - 16px) / 3);
+    width: calc((100% - 32px) / 3);
   }
 
   .item-top-sellers:nth-child(3) {
     display: inline-block;
+  }
+
+  .paragraph-top-sellers {
+    width: 407px;
   }
 } */
