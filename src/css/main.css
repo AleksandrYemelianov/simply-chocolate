@@ -7,3 +7,33 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./utility.css');
+/* всі підключення стилів тільки нижче  */
+/* Header */
+@import url('./header.css');
+/* Hero */
+
+/* Advantages */
+
+/* Unique components */
+@import url('./unique.css');
+
+/* How its made? */
+
+/* Our products */
+
+/* Top sellers */
+@import url('./top-sellers.css');
+
+/* Reviews */
+@import url('./reviews.css');
+
+/* Subscribe */
+@import url('./subscribe.css');
+/* Footer */
+
+/* =======  Modal ======== */
+/* Buy now */
+/* Thank you */
+/* Leave a review about our chocolate */
+/* Thank you for your feedback */
+/* Explore our new chocolate first */

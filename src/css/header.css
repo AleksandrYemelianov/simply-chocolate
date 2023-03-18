@@ -1,0 +1,154 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 14px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  width: 144px;
+  height: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: var(--primary-dark-color);
+}
+
+.accent-logo {
+  font-style: italic;
+}
+
+.header-list-nav {
+  display: none;
+}
+
+.header-list-soc {
+  display: none;
+}
+
+/* ---------- MOB MENU --------------- */
+
+.mob-menu {
+  display: none;
+  font-weight: 500;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  color: var(--primary-light-color);
+  background: var(--primary-background-color);
+}
+
+.menu-link-nav:is(:hover, :focus, :active) {
+  font-weight: 600;
+  color: var(--accent-color);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.menu-container {
+  height: 100%;
+  width: 220px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-close-menu {
+  margin-left: auto;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 88px;
+  margin-left: 30px;
+}
+
+.menu-list-soc {
+  display: flex;
+  gap: 18px;
+}
+
+/* ------------ TABLET -------------- */
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 24px;
+  }
+
+  .header-menu-icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+  }
+
+  /* ----------- TAB MOB MENU ----------- */
+
+  .mob-menu {
+    width: 290px;
+  }
+
+  .menu-container {
+    width: 290px;
+    padding: 24px 32px;
+  }
+}
+
+/* ------------ DESKTOP ---------------- */
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-bottom: 32px;
+  }
+
+  .header-logo {
+    margin-right: 188px;
+    width: 185px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .header-list-nav {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    display: flex;
+    gap: 24px;
+    margin-right: 137px;
+  }
+
+  .header-link-nav:is(:hover, :focus, :active) {
+    color: var(--accent-color);
+  }
+
+  .header-list-soc {
+    display: flex;
+    gap: 18px;
+  }
+}
