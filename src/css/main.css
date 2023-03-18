@@ -8,6 +8,7 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./utility.css');
+
 /* всі підключення стилів тільки нижче  */
 /* Header */
 @import url('./header.css');
@@ -40,12 +41,4 @@
 @import url('./modal-feedback.css');
 /* Explore our new chocolate first */
 @import url('./modal-expl.css');
-
-
-
-
-
-
-
-
 
