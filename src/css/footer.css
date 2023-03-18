@@ -1,0 +1,187 @@
+
+
+
+
+.container{
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:20px;
+    padding-right: 20px;
+    
+}
+
+.footer-one{
+    background: #1E1823;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+.footer-name-chocolate{
+    color: #FD9222;
+}
+
+.footer-page-name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: #FAFAFA;
+    width: 300px;
+    height: 56px;
+}
+
+.footer-contact{
+    width: 164px;
+    height: 72px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+}
+
+.footer-p-contact{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 14px;    
+}
+
+.footer-tel{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.footer-mailto{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 0px;   
+}
+
+.footer-hr{
+    
+
+/* display: block; */
+    /* width: 335px; */
+ margin-top: 0%;
+ margin-bottom: 0%;
+  /* align-items: center;
+  justify-content: center;
+  text-align: center; */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+transform: rotate(180deg);
+}
+
+.footer-menu{
+    margin-top: 32px;
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+}
+
+.footer-ul-menu{
+}
+
+.footer-li-menu{
+    margin-bottom: 18px;
+
+}
+
+.footer-li-menu:nth-child(5){
+    margin-bottom: 0px;
+}
+
+
+@media screen and (min-width :768px){
+    .container{
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left:32px;
+        padding-right: 32px;
+        
+    }
+
+    .footer-one{
+        background: #1E1823;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-page-name{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: #FAFAFA;
+        width: 300px;
+        height: 68px;
+        margin-right: 124px;
+    }
+
+    .footer-tablet-flex{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .footer-contact{
+        width: 164px;
+        height: 72px;
+        margin-top: 0;
+        margin-bottom: 0;
+    
+    }
+
+    .footer-tel{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-bottom: 4px;
+    }
+
+
+    .footer-mailto{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-bottom: 0px;   
+    }
+
+    .footer-menu{
+        display: flex;
+        margin-top: 24px;
+        font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    }
+
+    .footer-ul-menu{
+        display: flex;
+
+    }
+    .footer-li-menu{
+        margin-bottom: 0px;
+    
+    }
+}
+
