@@ -1,6 +1,6 @@
 /* SUBSCRIBE */
 
-.sibscribe-section {
+.subscribe-section {
     padding-top: 62px;
     padding-bottom: 62px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-mobile.jpg);
@@ -12,13 +12,13 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .sibscribe-section {
+    .subscribe-section {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-mobile@2x.jpg);
   }
 }
    
 
-.sibscribe-title {
+.subscribe-title {
     width: 291px;
     font-weight: 600;
     font-size: 20px;
@@ -29,7 +29,7 @@
     margin-bottom: 24px;
     color:#FFFFFF;
 }
-.sibscribe-text {
+.subscribe-text {
     font-size: 14px;
     line-height: 1.3;
     text-align: center;
@@ -37,7 +37,7 @@
     margin-bottom: 24px;
     color:#FFFFFF;
 }
-.sibscribe-btn {
+.subscribe-btn {
     display: block;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -57,8 +57,8 @@
     color:#FFFFFF;
 }
 
-.sibscribe-btn:focus,
-.sibscribe-btn:hover {
+.subscribe-btn:focus,
+.subscribe-btn:hover {
     background-color: #FCF1E0;
     color:#FD9222;
 }
@@ -67,7 +67,7 @@
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-    .sibscribe-section {
+    .subscribe-section {
         padding-top: 72px;
         padding-bottom: 72px;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-768.jpg);
@@ -79,26 +79,26 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .sibscribe-section {
+    .subscribe-section {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-768@2x.jpg);
   }
 }
    
-    .sibscribe-title {
+    .subscribe-title {
         width: 378px;
         font-weight: 600;
         font-size: 24px;
         line-height: 1.2;
     }
 
-    .sibscribe-text {
+    .subscribe-text {
         width: 467px;
         margin: auto;
         margin-bottom: 24px;
         color:#FFFFFF;
     }
 
-    .sibscribe-btn {
+    .subscribe-btn {
         padding-top: 14px;
         padding-bottom: 14px;
         padding-left: 40px;
@@ -114,7 +114,7 @@
 /* DESCKTOP */
 
 @media screen and (min-width: 1200px) {
-    .sibscribe-section {
+    .subscribe-section {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-1200.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -124,7 +124,7 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .sibscribe-section {
+    .subscribe-section {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-1200@2x.jpg);
   }
 }
