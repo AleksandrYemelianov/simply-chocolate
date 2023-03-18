@@ -1,0 +1,169 @@
+.made-container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.made-title {
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: var(--primary-dark-color);
+margin-bottom: 32px;
+}
+
+.made-subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+
+.made-picture {
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.video-icon {
+    position: absolute;
+    left: 70%;
+    top: 82%;
+    height: auto;
+    
+ 
+}
+
+.ingridients-title {
+font-weight: 600;
+font-size: 18px;
+line-height: 1.33;
+color:var(--primary-dark-color);
+margin-top: 0;
+margin-bottom: 20px;
+}
+
+.ingridients-item {
+    padding-right: 8px;
+    text-align: right;
+}
+
+
+
+.made-paragraph {
+    background-color: var(--primary-light-color);
+    border-radius:15px;
+    padding: 20px 14px;
+}
+
+
+.ingridients-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.28;
+letter-spacing: -0.02em;
+color: var(--primary-dark-color);
+}
+
+.ingridients-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+@media screen and (min-width: 375px) {
+    .made-container {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .made-container {
+        max-width: 768px;
+    }
+
+    .made-backgound {
+        padding-left: 77px;
+        padding-right: 77px;
+    }
+
+    .section-flex {
+        display: flex;
+        justify-content: center;
+    }
+    .ingridients-title {
+        margin-bottom: 28px;
+    }
+
+    img {
+        width: auto;
+    }
+
+    .made-paragraph {
+        padding: 32px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 614px;
+    }
+
+    .video-icon {
+        position: absolute;
+        left: 44%;
+        top: 82%;
+        height: auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .made-container {
+        max-width: 1200px;
+        position: relative;
+    }
+
+    
+
+    .made-background {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    
+
+    .ingridients-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .made-paragraph {
+        width: 516px;
+        padding-bottom: 94px;
+    }
+
+    .made-picture {
+        margin-bottom: 0;
+    }
+
+
+    img {
+        height: 100%;
+    }
+}
+
