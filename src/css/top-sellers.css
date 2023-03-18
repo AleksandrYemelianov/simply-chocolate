@@ -1,9 +1,5 @@
-/* .title-top-sellers {
+.title-top-sellers {
   margin-bottom: 32px;
-}
-
-.title-top-sellers > span {
-  color: var(--accent-color);
 }
 
 .wrap-top-sellers {
@@ -24,6 +20,7 @@
 }
 
 .item-top-sellers img {
+  height: 464px;
   border-radius: 15px;
 }
 
@@ -93,4 +90,4 @@
   .paragraph-top-sellers {
     width: 407px;
   }
-} */
+}
