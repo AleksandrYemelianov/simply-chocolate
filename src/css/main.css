@@ -4,8 +4,39 @@
   | default @import url()
   |============================
 */
+
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./utility.css');
-
+/* всі підключення стилів тільки нижче  */
+/* Header */
+@import url('./header.css');
+/* Hero */
+@import url('./hero.css');
+/* Advantages */
 @import url('./advatages.css');
+/* Unique components */
+@import url('./unique.css');
+/* How its made? */
+@import url('./how-its-made.css');
+/* Our products */
+@import url('./our-product.css');
+/* Top sellers */
+@import url('./top-sellers.css');
+/* Reviews */
+@import url('./reviews.css');
+/* Subscribe */
+@import url('./subscribe.css');
+/* Footer */
+@import url('./footer.css');
+/* ================================  Modal =========================== */
+/* Buy now */
+@import url('./modal-buy.css');
+/* Thank you */
+@import url('./modal-thank.css');
+/* Leave a review about our chocolate */
+@import url('./modal-review.css');
+/* Thank you for your feedback */
+@import url('./modal-feedback.css');
+/* Explore our new chocolate first */
+@import url('./modal-expl.css');
