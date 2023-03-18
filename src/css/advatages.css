@@ -20,10 +20,19 @@
     margin-bottom: 20px;
 }
 
-.advantages-icon {
+.thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 62px;
     height: 62px;
-    outline: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin-bottom: 22px;
+}
+
+.advantages-icon {
+    outline: 1px solid tomato;
 }
 
 .advantages-content {
