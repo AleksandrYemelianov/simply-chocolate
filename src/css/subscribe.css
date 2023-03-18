@@ -3,7 +3,7 @@
 .sibscribe-section {
     padding-top: 62px;
     padding-bottom: 62px;
-    background-color: tomato;
+    background: tomato;
 }
 
 /* .sibscribe-section-wrap {
@@ -48,11 +48,6 @@
     color:#FFFFFF;
 }
 
-.sibscribe-btn:focus,
-.sibscribe-btn:hover {
-    background-color: #f2bd1d;
-}
-
 
 /* TABLET */
 
@@ -60,7 +55,7 @@
     .sibscribe-section {
         padding-top: 72px;
         padding-bottom: 72px;
-        background-color: grey;
+        background: grey;
     }
 
     .sibscribe-title {
@@ -87,5 +82,19 @@
         font-size: 18px;
         line-height: 1.2;
     }
+
+    .sibscribe-btn:focus,
+    .sibscribe-btn:hover {
+        background-color: #f2bd1d;
+    }
 }
+
+/* DESCKTOP */
+
+@media screen and (min-width: 1200px) {
+    .sibscribe-section {
+        background: tomato;
+    }
+    
+  }
     
