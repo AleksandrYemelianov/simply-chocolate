@@ -1,0 +1,175 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 14px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  width: 144px;
+  height: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: var(--primary-dark-color);
+}
+
+.accent-logo {
+  font-style: italic;
+}
+
+.header-list-nav {
+  display: none;
+}
+
+.header-list-soc {
+  display: none;
+}
+
+.header-menu-icon-tab {
+  display: none;
+}
+
+/* ---------- MOB MENU --------------- */
+
+.mob-menu {
+  font-weight: 500;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  width: 68%;
+  height: 100%;
+  color: var(--primary-light-color);
+  background: var(--primary-background-color);
+  overflow-y: auto;
+  transform: translateX(100%);
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-link-nav:is(:hover, :focus, :active) {
+  font-weight: 600;
+  color: var(--accent-color);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.menu-container {
+  height: 100%;
+  width: 220px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-menu-close {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-close-icon-tab {
+  display: none;
+}
+
+.menu-list-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 88px;
+  margin-left: 30px;
+  margin-bottom: 88px;
+}
+
+.menu-list-soc {
+  display: flex;
+  gap: 18px;
+}
+
+/* ------------ TABLET -------------- */
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 24px;
+  }
+
+  .header-menu-icon-mob {
+    display: none;
+  }
+
+  .header-menu-icon-tab {
+    display: block;
+  }
+
+  /* ----------- TAB MOB MENU ----------- */
+
+  .mob-menu {
+    width: 38%;
+  }
+
+  .menu-container {
+    width: 290px;
+    padding: 24px 32px;
+  }
+
+  .header-close-icon-mob {
+    display: none;
+  }
+
+  .header-close-icon-tab {
+    display: block;
+  }
+}
+
+/* ------------ DESKTOP ---------------- */
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-bottom: 32px;
+  }
+
+  .header-logo {
+    margin-right: 188px;
+    width: 185px;
+    height: 20px;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .header-list-nav {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    display: flex;
+    gap: 24px;
+    margin-right: 137px;
+  }
+
+  .header-link-nav:is(:hover, :focus, :active) {
+    color: var(--accent-color);
+  }
+
+  .header-list-soc {
+    display: flex;
+    gap: 18px;
+  }
+}
