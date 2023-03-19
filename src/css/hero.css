@@ -97,6 +97,7 @@ margin-bottom: 32px;
   }
   .hero--title {
     width: 484px;
+    font-style: normal;
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.03em;
@@ -133,8 +134,12 @@ margin-bottom: 32px;
   .hero--content{
     width:1056px;
   }
-  .hero--title{
-   
-
-  }
+  .hero--title{font-weight: 500; 
+    font-size: 28px;
+    line-height: 1.20; 
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: -0.03em; 
 }
+   
+  }
