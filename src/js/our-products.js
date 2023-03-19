@@ -1,4 +1,4 @@
-const swiper = new Swiper('.our-products-swiper', {
+new Swiper('.our-products-swiper', {
   direction: 'horizontal',
 
   loop: true,
