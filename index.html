@@ -23,19 +23,23 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-de901fcc.css">
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-dd06b477.css">
   </head>
   <body>
-    <!-- ======== header ========= -->
-    <!-- Header -->
+    <div class="body-wrap">
+      <!-- ======== header ========= -->
+      <!-- Header -->
 <header class="header">
   <!-- Menu -->
   <div class="container header-container">
     <nav class="header-nav">
       <a class="header-logo" href="../index.html"
-        ><span class="accent-logo">SIMPLY&nbsp;</span>CHOCOLATE
-        <svg class="header-logo-icon" width="21" height="21">
-          <use href=""></use>
+        ><span class="accent-logo">SIMPLY</span>CHOCOLATE
+        <svg class="header-logo-icon-mob" width="21" height="21">
+          <use href="../images/svg/icons.svg#icon-header-choco-tab-mob"></use>
+        </svg>
+        <svg class="header-logo-icon-desk" width="24" height="24">
+          <use href="../images/svg/icons.svg#icon-header-choco-dsktp"></use>
         </svg>
       </a>
       <ul class="header-list-nav">
@@ -61,39 +65,50 @@
             class="header-link-soc"
             href="https://www.instagram.com/"
             target="_blank"
-            ><svg class="header-soc-icon" width="22" height="22">
-              <use href=""></use></svg
-            >i</a
-          >
+            rel="noopener noreferrer"
+            ><svg class="header-soc-icon" width="24" height="24">
+              <use
+                href="../images/svg/icons.svg#icon-header-insta-dsktp"
+              ></use></svg
+          ></a>
         </li>
         <li class="header-item-soc">
-          <a class="header-link-soc" href="https://twitter.com/" target="_blank"
-            ><svg class="header-soc-icon" width="20" height="20">
-              <use href=""></use></svg
-            >t</a
-          >
+          <a
+            class="header-link-soc"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg class="header-soc-icon" width="24" height="24">
+              <use
+                href="../images/svg/icons.svg#icon-header-twitter-dsktp"
+              ></use></svg
+          ></a>
         </li>
       </ul>
     </nav>
-    <button class="btn-menu" type="button">
+    <button class="btn-menu" type="button" data-menu-open>
       <svg class="header-menu-icon-mob" width="28" height="28">
-        <use href=""></use>
+        <use href="../images/svg/icons.svg#icon-mobile-menu-icon-mob"></use>
       </svg>
       <svg class="header-menu-icon-tab" width="32" height="32">
-        <use href=""></use>
+        <use href="../images/svg/icons.svg#icon-mobile-menu-icon-tab"></use>
       </svg>
     </button>
   </div>
   <!-- Mob Menu -->
-  <div class="mob-menu">
+  <div class="mob-menu is-hidden" data-menu>
     <div class="menu-container">
       <div>
-        <button class="btn-menu-close" type="button">
+        <button class="btn-menu-close" type="button" data-menu-close>
           <svg class="header-close-icon-mob" width="28" height="28">
-            <use href=""></use>
+            <use
+              href="../images/svg/icons.svg#icon-mobile-menu-close-mob"
+            ></use>
           </svg>
           <svg class="header-close-icon-tab" width="32" height="32">
-            <use href=""></use>
+            <use
+              href="../images/svg/icons.svg#icon-mobile-menu-close-tab"
+            ></use>
           </svg>
         </button>
         <ul class="menu-list-nav">
@@ -121,17 +136,34 @@
               class="menu-link-soc"
               href="https://www.instagram.com/"
               target="_blank"
-              ><svg class="menu-soc-icon" width="22" height="22">
-                <use href=""></use></svg
-              >i</a
-            >
+              rel="noopener noreferrer"
+              ><svg class="menu-soc-icon-mob" width="22" height="22">
+                <use
+                  href="../images/svg/icons.svg#icon-mobile-menu-insta-mob"
+                ></use>
+              </svg>
+              <svg class="menu-soc-icon-tab" width="24" height="24">
+                <use
+                  href="../images/svg/icons.svg#icon-mobile-menu-insta-tab"
+                ></use></svg
+            ></a>
           </li>
           <li class="menu-item-soc">
-            <a class="menu-link-soc" href="https://twitter.com/" target="_blank"
-              ><svg class="menu-soc-icon" width="20" height="20">
-                <use href=""></use></svg
-              >t</a
-            >
+            <a
+              class="menu-link-soc"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="menu-soc-icon-mob" width="20" height="20">
+                <use
+                  href="../images/svg/icons.svg#icon-mobile-menu-twitter-mob"
+                ></use>
+              </svg>
+              <svg class="menu-soc-icon-tab" width="24" height="24">
+                <use
+                  href="../images/svg/icons.svg#icon-mobile-menu-twitter-tab"
+                ></use></svg
+            ></a>
           </li>
         </ul>
       </div>
@@ -139,10 +171,12 @@
   </div>
 </header>
 
-   
-    <main>
-      <!-- /* Hero */ -->
-      <section class="hero">
+
+
+
+      <main>
+        <!-- /* Hero */ -->
+        <section class="hero">
   <div class="container">
     <div class="hero--content">
       <h1 class="visually-hidden">Hero</h1>
@@ -175,8 +209,8 @@
   </div>
 </section>
 
-      <!-- /* Advantages */  -->
-      <section class="section">
+        <!-- /* Advantages */  -->
+        <section class="section">
     <div class="advantages container">
         <h2 class="advantages-title">Advantages</h2>
     <ul class="advantages-list">
@@ -224,8 +258,8 @@
     </div>
     
 </section>
-      <!-- /* Unique components */ -->
-      <section class="unique-section container">
+        <!-- /* Unique components */ -->
+        <section class="unique-section container">
     <div class="unique-title-text">
     <h2 class="unique-general-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="unique-general-span">TASTE</span> SENSATION</h2>
     <p class="unique-title">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
@@ -314,8 +348,8 @@
     </ul>
 </section>
 
-      <!-- /* How its made? */  -->
-      <section class="section made-section">
+        <!-- /* How its made? */  -->
+        <section class="section made-section">
     <div class="container made-container">
         <h1 class="made-title">HOW IT'S <span class="made-subtitle">MADE?</span></h1>
         <div class="made-background">
@@ -351,8 +385,8 @@
        </div>
     </div>
 </section>  
-      <!-- /* Our products */  -->
-      <section class="our-products-section section">
+        <!-- /* Our products */  -->
+        <section class="our-products-section section">
   <div class="our-products-container container">
     <h2 class="our-products-title">
       Our <span class="our-products-title-accent">products</span>
@@ -507,8 +541,8 @@
   </div>
 </section>
 
-      <!-- /* Top sellers */  -->
-      <section class="section section-top-sellers">
+        <!-- /* Top sellers */  -->
+        <section class="section section-top-sellers">
   <div class="container">
     <h2 class="title title-top-sellers">
       <span class="title__accent">tOp</span> Sellers
@@ -595,8 +629,8 @@
   </div>
 </section>
 
-      <!-- /* Reviews */  -->
-      <section class="section reviews">
+        <!-- /* Reviews */  -->
+        <section class="section reviews">
   <div class="container reviews-container">
     <h2 class="reviews-title">
       <span class="reviews-title-accent">chocolate</span> is loved
@@ -670,8 +704,8 @@
 </section>
 
 
-      <!-- /* Subscribe */ -->
-      <section class="subscribe-section container">
+        <!-- /* Subscribe */ -->
+        <section class="subscribe-section container">
     <div class="subscribe-section-wrap">
      <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
      <p class="subscribe-text">
@@ -680,9 +714,9 @@
      <button type="button" class="subscribe-btn button button__accent">Subscribe</button>
     </div>
 </section>
-    </main>
-    <!-- ======= footer ====== -->
-    
+      </main>
+      <!-- ======= footer ====== -->
+      
     <footer class="footer-one">
         <div class="container">
             <div class="footer-tablet-flex">
@@ -727,8 +761,8 @@
 
 
 
-    <!-- ======= modal ======= -->
-    <div class="backdrop is-hidden">
+      <!-- ======= modal ======= -->
+      <div class="backdrop is-hidden">
   <div class="modal__thank">
     <button class="modal__thank--close" type="button" data-modal-close>
       <svg
@@ -785,14 +819,15 @@
   </div>
 </div>
 
-    
+      
+    </div>
     <!-- ========= JS ======== -->
+    <script src="partials/js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="partials/js/our-products.js"></script>
     <script src="
 https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js
 "></script>
     <script src="script-swiper.js"></script>
-  
   </body>
 </html>
