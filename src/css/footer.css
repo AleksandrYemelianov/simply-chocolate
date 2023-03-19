@@ -20,6 +20,10 @@ height: 68px;
     color: #FAFAFA;
    
 }
+ .footer-mobil-svg{
+    display: flex;
+ }
+
 
 .footer-contact{
     width: 164px;
@@ -54,6 +58,12 @@ height: 68px;
     letter-spacing: -0.02em;
     color: #FFFFFF;
     margin-bottom: 0px;   
+}
+
+.footer-div-svg{
+    width: 58px;
+    height: 22px;
+
 }
 
 .footer-hr{
@@ -183,7 +193,7 @@ color: #FFFFFF;
             display: flex;
             margin-bottom: 62px;
             }
-
+            
 
             .footer-page-name{
                 font-size: 28px;
