@@ -26,3 +26,4 @@ const swiper = new Swiper('.reviews-swiper', {
     },
   },
 });
+
