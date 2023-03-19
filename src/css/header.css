@@ -31,7 +31,16 @@
   color: var(--primary-dark-color);
 }
 
+.header-logo-icon-mob,
 .header-logo-icon-desk {
+  fill: transparent;
+  stroke: var(--accent-color);
+}
+
+.header-logo-icon-desk,
+.header-list-nav,
+.header-list-soc,
+.header-menu-icon-tab {
   display: none;
 }
 
@@ -39,12 +48,13 @@
   font-style: italic;
 }
 
-.header-list-nav {
-  display: none;
+.header-soc-icon {
+  fill: transparent;
+  stroke: var(--primary-dark-color);
 }
 
-.header-list-soc {
-  display: none;
+.header-soc-icon:is(:hover, :focus, :active) {
+  stroke: var(--accent-color);
 }
 
 .btn-menu {
@@ -59,10 +69,6 @@
 
 .header-menu-icon-mob {
   stroke: var(--primary-dark-color);
-}
-
-.header-menu-icon-tab {
-  display: none;
 }
 
 /* ---------- MOB MENU --------------- */
@@ -87,6 +93,10 @@
   opacity: 0;
   pointer-events: none;
   transform: translateX(220px);
+}
+
+.menu-link-nav {
+  transition: var(--transition);
 }
 
 .menu-link-nav:is(:hover, :focus, :active) {
@@ -114,8 +124,9 @@
   align-items: center;
   background: transparent;
   border-style: none;
-  transition: var(--transition);
+  stroke: var(--primary-light-color);
   transform: scale(1);
+  transition: var(--transition);
 }
 
 .btn-menu-close:focus {
@@ -123,7 +134,8 @@
   stroke: var(--accent-color);
 }
 
-.header-close-icon-tab {
+.header-close-icon-tab,
+.menu-soc-icon-tab {
   display: none;
 }
 
@@ -142,15 +154,13 @@
 }
 
 .menu-item-soc {
+  fill: transparent;
+  stroke: var(--primary-light-color);
   transition: var(--transition);
 }
 
 .menu-item-soc:is(:hover, :focus) {
   stroke: var(--accent-color);
-}
-
-.menu-soc-icon-tab {
-  display: none;
 }
 
 /* ------------ TABLET -------------- */
@@ -174,10 +184,6 @@
     stroke: var(--primary-dark-color);
   }
 
-  .header-menu-icon-mob {
-    display: none;
-  }
-
   /* ----------- TAB MOB MENU ----------- */
 
   .mob-menu {
@@ -198,18 +204,12 @@
     transform: scale(1.25);
   }
 
-  .header-close-icon-tab {
-    display: block;
-  }
-
-  .header-close-icon-mob {
-    display: none;
-  }
-
+  .header-close-icon-tab,
   .menu-soc-icon-tab {
     display: block;
   }
 
+  .header-close-icon-mob,
   .menu-soc-icon-mob {
     display: none;
   }
@@ -228,16 +228,13 @@
     line-height: 1.11;
   }
 
-  .header-logo-icon-mob {
+  .header-logo-icon-mob,
+  .btn-menu {
     display: none;
   }
 
   .header-logo-icon-desk {
     display: block;
-  }
-
-  .btn-menu {
-    display: none;
   }
 
   .header-list-nav {
@@ -247,6 +244,7 @@
     display: flex;
     gap: 24px;
     margin-right: 137px;
+    transition: var(--transition);
   }
 
   .header-link-nav:is(:hover, :focus, :active) {
