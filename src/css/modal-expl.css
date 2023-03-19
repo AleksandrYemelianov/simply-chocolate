@@ -6,7 +6,7 @@
   width: 100vw;
   height: 100vh;
 
-  background-color: var(--secondary-light-color);
+  background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
   z-index: 2;
   transition: opacity var(--transition);
@@ -32,7 +32,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid var(--accent-color);
+  /* border: 1px solid var(--accent-color); */
   border-radius: 15px;
 
   opacity: 1;
@@ -56,6 +56,10 @@
   }
 }
 
+.modal-expl__form .title {
+  text-align: start;
+}
+
 .modal-expl__input {
   height: 45px;
   width: 100%;
@@ -76,7 +80,7 @@
 @media screen and (min-width: 768px) {
   .modal-expl__input {
     height: 52px;
-    max-width: 313px;
+    width: 313px;
     padding: 15px 24px;
     margin-top: 28px;
 
@@ -119,7 +123,9 @@
 
 @media screen and (min-width: 768px) {
   .button__accent--expl {
+    width: 137px;
     padding: 17px 40px;
+    margin-left: 8px;
   }
 }
 
