@@ -59,28 +59,12 @@
   letter-spacing: 0em;
   text-align: center;
 }
-/* -------------------- Swiper -------------------------- */
-
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-  width: 28px;
-  height: 13px;
-  border-radius: 50px;
-}
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background-color: #1111111a;
-  width: 13px;
-  height: 13px;
-}
-.swiper-pagination {
+/* -------------------- Swiper ------------------------ */
+.our-products-pagination {
   position: static;
   margin-top: 20px;
 }
-/* ---------------------------------------- */
+/* ---------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .our-products-card {
     max-width: 270px;
