@@ -1,11 +1,6 @@
-.made-container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+.made-section{
+    padding-top: 72px;
 }
-
 
 .made-title {
 font-weight: 600;
@@ -28,18 +23,18 @@ margin-bottom: 32px;
 
 
 .made-picture {
-    position: relative;
     border-radius: 15px;
-    margin-bottom: 20px;
+}
+
+.made-container {
+    position: relative;
 }
 
 .video-icon {
     position: absolute;
-    left: 70%;
-    top: 82%;
+    left: 47%;
+    top: 25%;
     height: auto;
-    
- 
 }
 
 .ingridients-title {
@@ -52,8 +47,13 @@ margin-bottom: 20px;
 }
 
 .ingridients-item {
+    padding-left: 16px;
+    display: inline-block;
+}
+
+.list-icon {
+    position: absolute;
     padding-right: 8px;
-    text-align: right;
 }
 
 
@@ -62,6 +62,7 @@ margin-bottom: 20px;
     background-color: var(--primary-light-color);
     border-radius:15px;
     padding: 20px 14px;
+    margin-top: 20px;
 }
 
 
@@ -77,24 +78,22 @@ color: var(--primary-dark-color);
     display: flex;
     flex-direction: column;
     gap: 18px;
+    position: relative;
 }
 
-img {
-    width: 100%;
-    display: block;
-    height: auto;
-}
+
 
 
 @media screen and (min-width: 375px) {
-    .made-container {
+    .container {
         max-width: 375px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .made-container {
+    .container {
         max-width: 768px;
+        position: relative;
     }
 
     .made-backgound {
@@ -102,9 +101,11 @@ img {
         padding-right: 77px;
     }
 
-    .section-flex {
+    .made-section {
         display: flex;
         justify-content: center;
+        padding-top: 100px;
+        
     }
     .ingridients-title {
         margin-bottom: 28px;
@@ -120,24 +121,28 @@ img {
         flex-direction: column;
         justify-content: center;
         width: 614px;
+        margin-top: 0;
     }
 
     .video-icon {
         position: absolute;
-        left: 44%;
-        top: 82%;
+        left: 49%;
+        top: 33%;
         height: auto;
+
     }
 
 }
 
 @media screen and (min-width: 1200px) {
-    .made-container {
+    .container {
         max-width: 1200px;
         position: relative;
     }
 
-    
+    .made-section {
+        padding-top: 128px;
+    }
 
     .made-background {
         display: flex;
@@ -145,6 +150,13 @@ img {
         gap: 20px;
     }
 
+    .video-icon {
+        position: absolute;
+        left: 27%;
+        top: 49%;
+        height: auto;
+
+    }
     
 
     .ingridients-list {
