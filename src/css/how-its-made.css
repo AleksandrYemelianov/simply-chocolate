@@ -1,11 +1,6 @@
-.made-container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+.section{
+    padding-top: 72px;
 }
-
 
 .made-title {
 font-weight: 600;
@@ -30,16 +25,11 @@ margin-bottom: 32px;
 .made-picture {
     position: relative;
     border-radius: 15px;
-    margin-bottom: 20px;
 }
 
 .video-icon {
-    position: absolute;
-    left: 70%;
-    top: 82%;
-    height: auto;
     
- 
+    
 }
 
 .ingridients-title {
@@ -62,6 +52,7 @@ margin-bottom: 20px;
     background-color: var(--primary-light-color);
     border-radius:15px;
     padding: 20px 14px;
+    margin-top: 20px;
 }
 
 
@@ -87,13 +78,13 @@ img {
 
 
 @media screen and (min-width: 375px) {
-    .made-container {
+    .container {
         max-width: 375px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .made-container {
+    .container {
         max-width: 768px;
     }
 
@@ -102,9 +93,11 @@ img {
         padding-right: 77px;
     }
 
-    .section-flex {
+    .section {
         display: flex;
         justify-content: center;
+        padding-top: 100px;
+        
     }
     .ingridients-title {
         margin-bottom: 28px;
@@ -120,24 +113,28 @@ img {
         flex-direction: column;
         justify-content: center;
         width: 614px;
+        margin-top: 0;
     }
 
     .video-icon {
-        position: absolute;
-        left: 44%;
-        top: 82%;
+        position: relative;
+        left: 49%;
+        top: 307%;
         height: auto;
+
     }
 
 }
 
 @media screen and (min-width: 1200px) {
-    .made-container {
+    .container {
         max-width: 1200px;
         position: relative;
     }
 
-    
+    .section {
+        padding-top: 128px;
+    }
 
     .made-background {
         display: flex;
@@ -145,6 +142,13 @@ img {
         gap: 20px;
     }
 
+    .video-icon {
+        position: absolute;
+        left: 27%;
+        top: 49%;
+        height: auto;
+
+    }
     
 
     .ingridients-list {
