@@ -33,6 +33,10 @@
     margin-bottom: 22px;
 }
 
+.advantages-icon {
+    fill: var(--accent-color);
+}
+
 .advantages-content {
     max-width: 308px;
 }
