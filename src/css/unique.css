@@ -1,14 +1,7 @@
 .unique-section {
     padding-top: 72px;
     padding-bottom: 72px;
-    max-width: 375px;
 }
-/* .unique-container {
-    width: 335px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-} */
 .unique-title-text {
     display: flex;
 flex-direction: column;
@@ -47,12 +40,6 @@ color: #111111;
     flex-wrap: wrap;
     gap: 20px;
 }
-.unuqie-window {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-}
-
 .unique-item {
     display: flex;
     justify-content: center;
@@ -60,6 +47,17 @@ color: #111111;
     flex-wrap: wrap;
     width: 335px;
     height: 270px;
+    position: relative;
+}
+.unuqie-window {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 336px;
+    height: 270px;
+}
+.its {
+    position: absolute;
 }
 .unique-item.chocolate {
     background: #FD9222;
@@ -78,7 +76,8 @@ border-radius: 15px;
     display: block;
     width: 224px;
     height: 171px;
-    margin-bottom: 25px;
+    margin: 28px 56px 25px 56px;
+    
 }
 .unique-item-text {
     font-weight: 600;
@@ -104,10 +103,10 @@ color: #FFFFFF;
 .unique-item-text.sweet {
     color: #111111;
 }
-.unuqie-window-sweet {
+/* .unuqie-window-sweet {
     position: relative;
     overflow: hidden;
-}
+} */
 .unique-open-window {
     position: absolute;
     top: 0;
@@ -180,7 +179,6 @@ overflow: hidden;
     .unique-section {
         padding-top: 100px;
         padding-bottom: 100px;
-        max-width: 768px;
     }
     .unique-title-text {
         gap: 28px;
@@ -190,20 +188,32 @@ overflow: hidden;
         width: 411px;
         font-size: 24px;
         line-height: 28px;
-        margin-bottom: 28px;
     }
     .unique-title {
         width: 486px;
     }
-    .unique-list {
+    .unique-flex-container {
+        display: flex;
+        flex-wrap: wrap;
         gap: 32px;
+    }
+    .unique-item.chocolate {
+        order: 1;
+    }
+    .unique-item.milk {
+        order: 3;
+    }
+    .unique-item.nuts {
+        order: 4;
+    }
+    .unique-item.sweet {
+        order: 2;
     }
 }
 @media screen and (min-width: 1200px) {
     .unique-section {
         padding-top: 128px;
         padding-bottom: 128px;
-        max-width: 1200px;
     }
     .unique-list {
         gap: 19px;
@@ -217,7 +227,20 @@ overflow: hidden;
     .unique-item {
         width: 270px;
     }
+    .unique-item img {
+        width: 206px;
+        margin: 28px 36px 28px 36px;
+    }
     .unique-button-window {
         gap: 4px;
+    }
+    .unique-item.milk {
+        order: 2;
+    }
+    .unique-item.nuts {
+        order: 3;
+    }
+    .unique-item.sweet {
+        order: 4;
     }
 }
