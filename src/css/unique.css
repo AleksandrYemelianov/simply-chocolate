@@ -64,6 +64,13 @@ color: var(--primary-dark-color);
     border: 1px solid var(--accent-color);
     border-radius: 15px;
 }
+.unique-item.milk:hover,
+.unique-item.milk:focus,
+ .unique-item.sweet:hover,
+ .unique-item.sweet:focus
+  {
+    border: 0px;
+}
 .unique-item.nuts {
 background-color: var(--primary-background-color);
 border-radius: 15px;
