@@ -1,5 +1,5 @@
 .advantages {
-    padding: 29px 20px 20px;
+    padding: 29px;
     max-width: 375px;
     background-color: var(--primary-background-color);
 }
@@ -14,8 +14,6 @@
 
 .advantages-item {
     max-width: 336px;
-    padding-right: 28px;
-    padding-bottom: 9px;
 }
 
 .advantages-item:not(:last-child) {
@@ -59,7 +57,7 @@
 @media screen and (min-width:768px) {
     .advantages {
         max-width: 768px;
-        padding: 59px 32px 50px;
+        padding: 50px 32px;
     }
 
     .advantages-list {
@@ -84,7 +82,7 @@
 @media screen and (min-width: 1200px) {
     .advantages {
         max-width: 1200px;
-        padding: 59px 50px 50px;
+        padding: 50px;
     }
         
     .advantages-list {  
@@ -94,7 +92,6 @@
 
     .advantages-item {
         position: relative;
-        padding-right: 18px;
     }
 
     .advantages-item:not(:last-child)::after {
