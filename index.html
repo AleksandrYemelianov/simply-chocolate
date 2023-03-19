@@ -23,7 +23,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-7406e2d1.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-2c5a3f23.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-c5791e94.css">
   </head>
   <body>
     <div class="body-wrap">
@@ -829,15 +830,25 @@
 </section>
 
         <!-- /* Subscribe */ -->
-        <section class="subscribe-section ">
-    <div class="subscribe-section-wrap container">
-     <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
-     <p class="subscribe-text">
-        From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.
-     </p>
-     <button type="button" class="subscribe-btn button button__accent">Subscribe</button>
-    </div>
+        <section class="subscribe-section">
+  <div class="subscribe-section-wrap container">
+    <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="subscribe-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button
+      data-modal-open-expl
+      type="button"
+      class="subscribe-btn button button__accent"
+    >
+      Subscribe
+    </button>
+  </div>
 </section>
+
       </main>
       <!-- ======= footer ====== -->
       
@@ -944,11 +955,64 @@
 </div>
 
       
+      <div data-modal-expl class="backdrop__modal-expl is-hidden">
+  <!-- class="backdrop is-hidden" -->
+  <div class="modal-expl">
+    <button data-modal-close-expl class="modal-exp__btn--close" type="button">
+      <svg class="modal-exp__close--icon" width="12" height="12">
+        <use href="../images/svg/icons.svg#icon-modal-close-mob"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="../images/modal-explore/explore-mobile@2x.jpg"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ../images/modal-explore/explore-1200.jpg,
+          ../images/modal-explore/explore-1200@2x.jpg
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ../images/modal-explore/explore-768.jpg,
+          ../images/modal-explore/explore-768@2x.jpg
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="../images/modal-explore/explore-mobile.jpg"
+        alt="bar of chocolate"
+      />
+    </picture>
+    <form class="modal-expl__form">
+      <div class="modal-expl__wrapper">
+        <label for="modal-expl__form" class="title"
+          >Explore our<br />
+          <span class="title__accent">new chocolate</span>
+          first!</label
+        >
+        <input
+          type="email"
+          name="email"
+          id="modal-expl__form"
+          placeholder="Enter your email"
+          class="modal-expl__input"
+        />
+      </div>
+      <button type="submit" class="button button__accent button__accent--expl">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
     </div>
     <!-- ========= JS ======== -->
-    <!-- <script type="module" src="/main.js"></script> -->
+    
 
-    <script src="js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/our-products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js"></script>
