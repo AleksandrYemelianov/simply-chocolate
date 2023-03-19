@@ -51,6 +51,7 @@
 .header-soc-icon {
   fill: transparent;
   stroke: var(--primary-dark-color);
+  transition: stroke var(--transition);
 }
 
 .header-soc-icon:is(:hover, :focus, :active) {
@@ -85,7 +86,7 @@
   background: var(--primary-background-color);
   overflow-y: auto;
   visibility: visible;
-  transition: var(--transition);
+  transition: transform var(--transition);
 }
 
 .mob-menu.is-hidden {
@@ -93,10 +94,12 @@
   opacity: 0;
   pointer-events: none;
   transform: translateX(220px);
+  transition: transform var(--transition);
 }
 
 .menu-link-nav {
-  transition: var(--transition);
+  transition: font-weight var(--transition), color var(--transition),
+    padding-bottom var(--transition), border-bottom var(--transition);
 }
 
 .menu-link-nav:is(:hover, :focus, :active) {
@@ -126,7 +129,7 @@
   border-style: none;
   stroke: var(--primary-light-color);
   transform: scale(1);
-  transition: var(--transition);
+  transition: stroke var(--transition), scale var(--transition);
 }
 
 .btn-menu-close:focus {
@@ -156,7 +159,7 @@
 .menu-item-soc {
   fill: transparent;
   stroke: var(--primary-light-color);
-  transition: var(--transition);
+  transition: stroke var(--transition);
 }
 
 .menu-item-soc:is(:hover, :focus) {
@@ -244,7 +247,10 @@
     display: flex;
     gap: 24px;
     margin-right: 137px;
-    transition: var(--transition);
+  }
+
+  .header-link-nav {
+    transition: color var(--transition);
   }
 
   .header-link-nav:is(:hover, :focus, :active) {
