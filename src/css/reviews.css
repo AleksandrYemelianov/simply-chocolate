@@ -87,7 +87,8 @@
     height: 285px;
 }
 
-.swiper-pagination {
+.swiper-pagination-reviews {
+    position: absolute;
     margin-top: 20px;
 }
 
