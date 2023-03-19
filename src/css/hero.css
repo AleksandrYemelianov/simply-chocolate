@@ -1,4 +1,6 @@
-.hero {
+
+
+  .hero-container{
   background-image: linear-gradient(
     180deg, rgba(17, 17, 17, 0) 0%, 
     rgba(17, 17, 17, 0.4) 100%), url(../images/hero/background@2x.jpg);
@@ -13,10 +15,10 @@
   border-radius: 30px;
 }
 
-.hero-content {
+.hero--content {
   position: absolute;
   top: 375px;
-  width: 299px;
+
 }
 
 .hero--title {
@@ -25,6 +27,7 @@
   color: var(--primary-light-color);
   margin-bottom: 32px;
   text-transform: none;
+  width: 278px;
 
 }
 .hero__scroll--wrap{
@@ -63,26 +66,22 @@ margin-bottom: 32px;
 }
 
 .hero__scroll--item{
- 
+ fill: var(--accent-color);
 }
 .hero__scroll--link{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 28px;
   height: 28px;
   border-radius: 50%;
   background-color: var(--primary-light-color);
 
 }
-.hero__svg{
-  position: absolute;
-  top: 50%;
-}
+
 
 @media screen and (min-width :768px){
-  .hero{
+  .hero-container{
     background-image: linear-gradient(
       180deg, rgba(17, 17, 17, 0) 0%, 
       rgba(17, 17, 17, 0.4) 100%),
@@ -97,11 +96,11 @@ margin-bottom: 32px;
     width:624px;
   }
   .hero--title {
-   
     width: 484px;
     font-size: 28px;
     line-height: 1.21;
-    font-weight: 500;
+    letter-spacing: -0.03em;
+   
   }
   .hero__tablet--btn--scroll{
     display: flex;
@@ -123,7 +122,7 @@ margin-bottom: 32px;
 }
 @media screen and (min-width :1200px){
  
-  .hero {
+  .hero-container {
     background-image: linear-gradient(
       180deg, rgba(17, 17, 17, 0) 0%, 
       rgba(17, 17, 17, 0.4) 100%),
@@ -133,5 +132,9 @@ margin-bottom: 32px;
   }
   .hero--content{
     width:1056px;
+  }
+  .hero--title{
+   
+
   }
 }
