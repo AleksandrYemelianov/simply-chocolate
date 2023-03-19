@@ -1,9 +1,8 @@
 .hero {
   background-image: linear-gradient(
     180deg, rgba(17, 17, 17, 0) 0%, 
-    rgba(17, 17, 17, 0.4) 100%),
-
-  url(../images/hero/background@2x.jpg);
+    rgba(17, 17, 17, 0.4) 100%), url(../images/hero/background@2x.jpg);
+    
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,13 +13,12 @@
   border-radius: 30px;
 }
 
-.hero--content{
+.hero-content {
   position: absolute;
   top: 375px;
   width: 299px;
-
-
 }
+
 .hero--title {
   text-align: start;
   font-weight: 500;
@@ -31,12 +29,10 @@
 }
 .hero__scroll--wrap{
 display: flex;
-align-items: center;
-
-  
+align-items: center; 
 }
-.hero__scroll--title{
 
+.hero__scroll--title{
 font-weight: 500;
 font-size: 12px;
 line-height: 1.17;
@@ -44,6 +40,7 @@ letter-spacing: -0.03em;
 color: var(--primary-light-color);
 margin-right: 12px;
 }
+
 .hero__button--wrap{
 white-space: nowrap;
 margin-bottom: 32px;
@@ -137,10 +134,4 @@ margin-bottom: 32px;
   .hero--content{
     width:1056px;
   }
-
- 
-
-
 }
- 
- 
