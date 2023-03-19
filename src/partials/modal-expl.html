@@ -32,22 +32,29 @@
     </picture>
     <form class="modal-expl__form">
       <div class="modal-expl__wrapper">
-        <label for="modal-expl__form" class="title"
-          >Explore our<br />
+        <p class="title">
+          Explore our<br />
           <span class="title__accent">new chocolate</span>
-          first!</label
-        >
-        <input
-          type="email"
-          name="email"
-          id="modal-expl__form"
-          placeholder="Enter your email"
-          class="modal-expl__input"
-        />
+          first!
+        </p>
+        <label for="modal-expl__form" class="title">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            class="modal-expl__input"
+          />
+        </label>
       </div>
       <button type="submit" class="button button__accent button__accent--expl">
         Submit
       </button>
     </form>
   </div>
+  <!-- Explore our<br />
+          <span class="title__accent">new chocolate</span>
+          first! -->
+  <!-- id="modal-expl__form" -->
 </div>
