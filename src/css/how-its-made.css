@@ -82,13 +82,13 @@ color: var(--primary-dark-color);
 
 
 @media screen and (min-width: 375px) {
-    .container {
+    .made-container {
         max-width: 375px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .made-container {
         max-width: 768px;
         position: relative;
     }
@@ -132,7 +132,7 @@ color: var(--primary-dark-color);
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
+    .made-container {
         max-width: 1200px;
         position: relative;
     }
