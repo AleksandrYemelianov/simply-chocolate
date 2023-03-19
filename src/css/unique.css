@@ -1,6 +1,3 @@
-.container {
-    padding-bottom: 72px;
-}
 .unique-title-text {
     display: flex;
 flex-direction: column;
@@ -170,9 +167,6 @@ overflow: hidden;
 
 
 @media screen and (min-width: 768px) {
-    .container {
-        padding-bottom: 100px;
-    }
     .unique-title-text {
         gap: 28px;
         margin-bottom: 50px;
@@ -204,9 +198,6 @@ overflow: hidden;
     }
 }
 @media screen and (min-width: 1200px) {
-    .container {
-        padding-bottom: 128px;
-    }
     .unique-list {
         gap: 19px;
         justify-content: flex-start;
