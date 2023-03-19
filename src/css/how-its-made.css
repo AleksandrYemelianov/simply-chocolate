@@ -22,9 +22,6 @@ margin-bottom: 32px;
 }
 
 
-.made-picture {
-    border-radius: 15px;
-}
 
 .made-container {
     position: relative;
@@ -111,8 +108,8 @@ color: var(--primary-dark-color);
         margin-bottom: 28px;
     }
 
-    img {
-        width: auto;
+    .made-picture {
+        width: 100%;
     }
 
     .made-paragraph {
@@ -170,12 +167,8 @@ color: var(--primary-dark-color);
     }
 
     .made-picture {
-        margin-bottom: 0;
-    }
-
-
-    img {
         height: 100%;
     }
+
 }
 
