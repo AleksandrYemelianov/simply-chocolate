@@ -86,19 +86,19 @@ font-size: 14px;
 line-height: 18px;
 letter-spacing: -0.02em;
 text-transform: uppercase;
-margin-bottom: 28px;
-margin-right: auto;
-margin-left: 28px;
+position: absolute;
+    top: 224px;
+    left: 28px;
+    margin: 0;
 }
 .unique-item-text.chocolate {
 color: #FFFFFF;
 }
 .unique-item-text.milk {
-    width: 36px;
     color: #111111;
+    
 }
 .unique-item-text.nuts {
-width: 39px;
 color: #FFFFFF;
 }
 .unique-item-text.sweet {
@@ -117,6 +117,10 @@ color: #FFFFFF;
     transform: translateY(100%);
     background-color: #FFFFFF;
     padding: 28px;
+
+    transition-property: transform, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .unique-window-title {
     width: 100%;
@@ -130,7 +134,8 @@ color: #FFFFFF;
     margin-bottom: 8px;
 }
 
-.unique-item:hover .unique-open-window {
+.unique-item:hover .unique-open-window, 
+.unique-item:focus .unique-open-window{
     transform: translateY(0);
 }
 .unique-button-window {
@@ -139,7 +144,7 @@ color: #FFFFFF;
     margin-bottom: 14px;
 }
 .button--small {
-    background: #FAFAFA;
+    background-color: #FAFAFA;
 border: 1px solid #FD9222;
 border-radius: 35px;
 font-size: 10px;
@@ -147,6 +152,10 @@ line-height: 12px;
 display: flex;
 align-items: center;
 color: #111111;
+
+transition-property: color, background-color, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button--small:hover,
 .button--small:focus {
@@ -154,7 +163,6 @@ color: #111111;
     background: #FD9222;
 }
 .unique-window-text {
-    width: 279px;
     font-size: 14px;
 line-height: 18px;
 letter-spacing: -0.02em;
@@ -172,6 +180,7 @@ overflow: hidden;
     .unique-section {
         padding-top: 100px;
         padding-bottom: 100px;
+        max-width: 768px;
     }
     .unique-title-text {
         gap: 28px;
@@ -194,12 +203,21 @@ overflow: hidden;
     .unique-section {
         padding-top: 128px;
         padding-bottom: 128px;
+        max-width: 1200px;
     }
     .unique-list {
         gap: 19px;
+        justify-content: flex-start;
+        text-align: left;
+        flex-wrap: nowrap;
+    }
+    .unuqie-window {
+        width: 270px;
     }
     .unique-item {
         width: 270px;
-        flex-wrap: nowrap;
+    }
+    .unique-button-window {
+        gap: 4px;
     }
 }
