@@ -108,9 +108,6 @@ color: var(--primary-dark-color);
         margin-bottom: 28px;
     }
 
-    .made-picture {
-        width: 100%;
-    }
 
     .made-paragraph {
         padding: 32px;
@@ -164,10 +161,6 @@ color: var(--primary-dark-color);
     .made-paragraph {
         width: 516px;
         padding-bottom: 94px;
-    }
-
-    .made-picture {
-        height: 100%;
     }
 
 }
