@@ -52,9 +52,6 @@ color: var(--primary-dark-color);
     width: 336px;
     height: 270px;
 }
-.its {
-    position: absolute;
-}
 .unique-item.chocolate {
     background-color: var(--accent-color);
     border-radius: 15px;
@@ -115,9 +112,7 @@ color: var(--primary-light-color);
     background-color: var(--primary-light-color);
     padding: 28px;
 
-    transition-property: transform, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition), background-color var(--transition);
 }
 .unique-window-title {
     width: 100%;
