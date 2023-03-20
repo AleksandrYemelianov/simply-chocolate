@@ -9,8 +9,8 @@
   -webkit-text-size-adjust: 100%;
 
   /* ===== color ===== */
-  --primary-dark-color: hwb(0 7% 93%);
-  --primary-light-color: #ffffff;
+  --primary-dark-color: #111111;
+    --primary-light-color: #ffffff;
   --secondary-dark-color: rgba(17, 17, 17, 0.7);
   --secondary-light-color: rgba(255, 255, 255, 0.7);
   --accent-color: #fd9222;
