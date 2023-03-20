@@ -162,7 +162,7 @@
   position: relative;
 }
 
-.buy-now-label-phone-input>.buy-now-label-input-phone {
+.buy-now-label-phone-input > .buy-now-label-input-phone {
   padding-left: 106px;
 }
 
@@ -244,16 +244,14 @@
   max-width: 100%;
   background: var(--accent-color);
   border-radius: 100px;
-  transition: color var(--transition),
-    background-color var(--transition);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .buy-now-btn-submit:hover,
 .buy-now-btn-submit:focus {
   color: var(--accent-color);
   background-color: var(--accent-active-color);
-  transition: color var(--transition),
-    background-color var(--transition);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 @media screen and (max-width: 767px) {
@@ -397,7 +395,7 @@
     max-width: 100%;
   }
 
-  .buy-now-label-phone-input>.buy-now-label-input-phone {
+  .buy-now-label-phone-input > .buy-now-label-input-phone {
     padding-left: 177px;
   }
 
@@ -438,3 +436,4 @@
     padding: 14px 40px;
     width: 133px;
   }
+}
