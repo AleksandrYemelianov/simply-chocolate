@@ -15,9 +15,6 @@
   margin: 0 auto;
   border-radius: 30px;
 }
-.section-hero {
-  padding-bottom: 72px;
-}
 
 .hero--content {
   position: absolute;
@@ -70,7 +67,8 @@
   border: 1px solid var(--primary-light-color);
   background: transparent;
   color: var(--primary-light-color);
-  transition: background-color var(--transition), border var(--transition), color var(--transition);
+  transition: background-color var(--transition), border var(--transition),
+    color var(--transition);
 }
 .hero__btn--2:hover,
 .hero__btn--2:focus {
@@ -114,9 +112,7 @@
     max-width: 704px;
     height: 890px;
   }
-  .section-hero {
-    padding-bottom: 50px;
-  }
+
   .hero--content {
     position: absolute;
     top: 671px;
@@ -156,9 +152,7 @@
       url(../images/hero/background@2x.jpg);
     max-width: 1136px;
   }
-  .section-hero {
-    padding-bottom: 72px;
-  }
+
   .hero--content {
     width: 1056px;
   }
