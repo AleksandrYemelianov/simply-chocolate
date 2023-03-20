@@ -1,231 +1,150 @@
-<div class="modal modal-buynow" data-modal="modal-buy-now">
-  <button class="modal-buynow-close" type="button">
-    <svg class="icon-close-modal js-modal-close" width="24" height="24">
-      <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
-    </svg>
-  </button>
-  <div class="buynow-container">
-    <h2 class="buynow-title title">
-      BUY&nbsp;<span class="buynow-title-now">NOW</span>
+<div class="buy-now-backdrop is-hidden js-buy-now">
+  <div class="buy-now-modal">
+    <button type="button" class="buy-now-btn-close js-close-menu-buy">
+      <svg class="buy-now-icon-close">
+        <use href="./src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now-title">
+      Buy <span class="buy-now-title-second">Now</span>
     </h2>
-    <ul class="buynow-list">
-      <li class="buynow-item">
-        <picture>
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order1.jpg    1x,
-              ./src/images/modal-order/order1@2x.jpg 2x
-            "
-            width="120"
-            height="107"
-            media="(min-width: 768px)"
-          />
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order1.jpg    1x,
-              ./src/images/modal-order/order1@2x.jpg 2x
-            "
-            width="167"
-            height="148"
-            media="(max-width: 767px)"
-          />
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order1.jpg    1x,
-              ./src/images/modal-order/order1@2x.jpg 2x
-            "
-            width="167"
-            height="148"
-            media="(max-width: 767px)"
-          />
-
-          <img
-            src="./src/images/modal-order/order1.jpg"
-            alt="kinder"
-            class="buynow-img"
-            width="167"
-            height="148"
-          />
-        </picture>
-        <button class="products-btn" type="button">100 g</button>
-      </li>
-      <li class="buynow-item">
-        <picture>
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order2.jpg    1x,
-              ./src/images/modal-order/order2@2x.jpg 2x
-            "
-            width="120"
-            height="107"
-            media="(min-width: 768px)"
-          />
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order2.jpg    1x,
-              ./src/images/modal-order/order2@2x.jpg 2x
-            "
-            width="167"
-            height="148"
-            media="(max-width: 767px)"
-          />
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order2.jpg    1x,
-              ./src/images/modal-order/order2@2x.jpg 2x
-            "
-            width="167"
-            height="148"
-            media="(max-width: 767px)"
-          />
-
-          <img
-            src="./src/images/modal-order/order2.jpg"
-            alt="praline"
-            class="buynow-img"
-            width="167"
-            height="148"
-          />
-        </picture>
-        <button class="products-btn" type="button">200 g</button>
-      </li>
-      <li class="buynow-item">
-        <picture>
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order3.jpg    1x,
-              ./src/images/modal-order/order3@2x.jpg 2x
-            "
-            width="120"
-            height="107"
-            media="(min-width: 768px)"
-          />
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order3.jpg    1x,
-              ./src/images/modal-order/order3@2x.jpg 2x
-            "
-            width="167"
-            height="148"
-            media="(max-width: 767px)"
-          />
-          <source
-            type="image/jpeg"
-            srcset="
-              ./src/images/modal-order/order3.jpg    1x,
-              ./src/images/modal-order/order3@2x.jpg 2x
-            "
-            width="167"
-            height="148"
-            media="(max-width: 767px)"
-          />
-
-          <img
-            src="./src/images/modal-order/order3.jpg"
-            alt="dark"
-            class="buynow-img"
-            width="167"
-            height="148"
-          />
-        </picture>
-        <button class="products-btn" type="button">300 g</button>
-      </li>
-    </ul>
-    <form class="buynow-form">
-      <label class="label-buynow" for="name">Personal information</label>
-      <div class="name-buynow">
-        <input
-          class="input-modal buynow-marg"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Name"
-          required
-          pattern=".{1,20}"
-          title="The number of characters should not exceed 20"
-        />
-        <input
-          class="input-modal"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Surname"
-          required
-          pattern=".{1,20}"
-          title="The number of characters should not exceed 20"
-        />
+    <div class="buy-now-slider-container">
+      <div class="buy-now-slider">
+        <div class="buy-now-slider-item">
+          <picture>
+            <source
+              type="image/jpeg"
+              src="./src/images/modal-order/order1.jpg 1x,
+              ./src/images/modal-order/order1@2x.jpg 2x"
+            />
+          </picture>
+          <p class="buy-now-slider-text">100 g</p>
+        </div>
+        <div class="slider-item">
+          <picture>
+            <source type="image/jpeg" src="./src/images/modal-order/order2.jpg
+            1x, ./src/images/modal-order/order2@2x.jpg 2x"" />
+          </picture>
+          <p class="buy-now-slider-text">200 g</p>
+        </div>
+        <div class="slider-item">
+          <picture>
+            <source type="image/jpeg" src="./src/images/modal-order/order3.jpg
+            1x, ./src/images/modal-order/order3@2x.jpg 2x"" />
+          </picture>
+          <p class="buy-now-slider-text">300 g</p>
+        </div>
       </div>
-      <label class="label-buynow" for="email">Email</label>
-      <div>
+    </div>
+    <div class="buy-now-image-container">
+      <div class="buy-now-picture-container">
+        <picture>
+          <source type="image/png" src="./src/images/modal-order/order1.jpg" />
+        </picture>
+        <p class="buy-now-slider-text">200 g</p>
+      </div>
+      <div class="buy-now-picture-container">
+        <picture>
+          <source type="image/png" src="./src/images/modal-order/order2.jpg" />
+        </picture>
+        <p class="buy-now-slider-text">200 g</p>
+      </div>
+      <div class="buy-now-picture-container">
+        <picture>
+          <source type="image/png" src="./src/images/modal-order/order3.jpg" />
+        </picture>
+        <p class="buy-now-slider-text">200 g</p>
+      </div>
+    </div>
+    <form class="buy-now-modal-form">
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Personal information</span>
+        <div class="buy-now-for-input">
+          <input
+            type="text"
+            name="user_name"
+            required
+            class="buy-now-label-input buy-now-first"
+            placeholder="Name"
+            pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+            minlength="2"
+          />
+          <input
+            type="text"
+            name="user_surname"
+            required
+            class="buy-now-label-input buy-now-label-input-second"
+            placeholder="Surname"
+            pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+            minlength="2"
+          />
+        </div>
+      </label>
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Email</span>
         <input
-          class="input-modal"
           type="email"
-          name="email"
-          id="email"
+          name="user_email"
+          required
+          class="buy-now-label-input buy-now-label-input-three"
           placeholder="Enter your email"
-          required
-          pattern=".{10,40}"
-          title="The number of characters should not be less than 10 and should not exceed 40"
         />
-      </div>
-      <label class="label-buynow" for="phone">Phone number</label>
-      <div>
-        <input
-          class="input-modal phone-input"
-          type="tel"
-          name="phone"
-          id="phone"
-          placeholder="Phone number"
-          required
-          pattern="^\+[0-9]{12}$"
-          title="Number of digits should not be 12"
-        />
-      </div>
-      <label class="label-buynow" for="card">Card number</label>
-      <div class="input-buynow-wrap">
-        <input
-          class="input-modal"
-          type="text"
-          name="card"
-          id="card"
-          placeholder="Enter card"
-          required
-          pattern="{.16,16}"
-        />
-        <svg class="mcard-buynow" width="32" height="21">
-          <use
-            href=".src/images/svg/icons.svg#icon-payment-icon-dsktp-tab"
-          ></use>
-        </svg>
-      </div>
-      <label class="label-buynow" for="com">Comment</label>
-      <div>
+      </label>
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Phone number</span>
+        <span class="buy-now-label-phone-input"
+          ><input
+            type="tel"
+            name="user-phone"
+            required
+            pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+            title="xx-xxx-xx-xx"
+            class="buy-now-label-input buy-now-label-input-phone buy-now-label-input-three"
+            placeholder="Phone number"
+          />
+          <div class="buy-now-phone-decor">
+            <svg class="buy-now-label-icon">
+              <use href="./src/images/svg/icons.svg#icon-flag-dsktp-tab"></use>
+            </svg>
+            <span class="buy-now-label-phone-number">+380</span>
+            <!-- <span class="buy-now-line"></span> -->
+          </div>
+        </span>
+      </label>
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Card number</span>
+        <span class="buy-now-label-input-cards">
+          <input
+            type="number"
+            name="user-card"
+            required
+            pattern="^[0-9]{12}"
+            title="xxxxxxxxxxxxxxxx"
+            class="buy-now-label-input buy-now-label-input-cards buy-now-label-input-three"
+            placeholder="Enter card"
+          />
+          <svg class="buy-now-icon-card">
+            <use
+              href="./src/images/svg/icons.svg#icon-payment-icon-dsktp-tab"
+            ></use>
+          </svg>
+        </span>
+      </label>
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Comment</span>
         <textarea
-          class="input-modal buynow-comment"
-          name="comment"
-          id="com"
+          name="user_message"
           placeholder="Enter text"
-          required
-          pattern="^[a-zA-Z]{5,500}"
-          title="The number of characters should not be less than 5 and should not exceed 500"
+          class="buy-now-message"
         ></textarea>
-      </div>
+      </label>
       <button
-        class="button submit-buynow js-open-modal"
         type="submit"
-        data-modal="modal-hero"
+        class="buy-now-btn-submit js-open-modal-thank"
+        data-modal-open
       >
         Submit
       </button>
     </form>
   </div>
 </div>
-<div class="overlay js-overlay-modal"></div>

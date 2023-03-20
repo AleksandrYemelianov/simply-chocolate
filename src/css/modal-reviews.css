@@ -1,120 +1,105 @@
-.modal-leave-review {
-    width: 311px;
-    height: 471px;
-    z-index: 100;
-
-    background-color: #FAFAFA;
-}
-
-.btn-wrap {
+.review-backdrop {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-light-color);
+    background-color: rgba(46, 47, 66, 0.7);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition);
 }
 
-.btn-close-leave-review {
-    margin-left: auto;
-    margin-right: 14px;
-    margin-top: 14px;
-
-    background-color: inherit;
-    border: none;
-    padding: 0;
-
-    stroke: #111111;
+.review-backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
-.container-modal-leave-review {
-    padding: 0 24px;
+.review-modal {
+    position: relative;
+    vertical-align: middle;
+    width: 311px;
+    max-width: 100%;
+    max-height: 471px;
+    max-height: 100%;
+    transform: scale(0);
+    background: var(--background-color);
+    border-radius: 15px;
+    padding: 32px 24px;
+    overflow-y: auto;
+
+    transition: transform var(--transition);
 }
 
-.title-modal-leave-review {
-    color: #111111;
+.review-backdrop.is-open .review-modal {
+    transform: scale(1);
+}
+
+.review-modal .buy-now-modal-form {
+    margin-bottom: 0;
+}
+
+.review-modal h2 {
+    line-height: 1.2;
     text-align: left;
+    max-width: 255px;
+
+    margin-bottom: 32px;
 }
 
-.accent-title-modal-leave-review {
+.review-modal .buy-now-title-accent {
     color: var(--accent-color);
 }
 
-.form-field-modal-leave-review {
+.review-modal .buy-now-first {
+    margin-bottom: 0;
+}
+
+.review-modal .buy-now-label:nth-child(-n + 3) {
     margin-bottom: 14px;
 }
 
-.message-form-field-modal-leave-review {
-    margin-bottom: 18px;
+.buy-now-label:last-child {
+    margin-bottom: 0px;
 }
 
-.iti--separate-dial-code .iti__selected-flag {
-    background-color: inherit;
-}
-
-.iti {
-    width: 100%;
-}
-
-.message-modal-leave-review {
-    height: 91px;
-}
-
-.text-input-modal-leave-review {
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: -0.02em;
-}
-
-@media screen and (max-width: 310px) {
-    .modal-leave-review {
-        width: 100%;
-    }
-}
-
-@media (max-height: 472px) {
-    .modal-leave-review {
-        height: 100%;
-        overflow: auto;
-    }
-}
+/* ____________ADAPTIVE REVIEW MODAL TABLET/DESKTOP_______________ */
 
 @media screen and (min-width: 768px) {
-    .modal-leave-review {
+    .review-modal {
         width: 517px;
-        height: 631px;
+        max-height: 631px;
+        padding: 40px;
     }
 
-    .container-modal-leave-review {
-        padding: 0 40px;
-    }
+    .review-modal h2 {
+        max-width: 298px;
+        font-size: 24px;
+        line-height: 1.16;
 
-    .btn-close-leave-review {
-        margin-right: 24px;
-        margin-top: 24px;
-    }
-
-    .message-modal-leave-review {
-        height: 137px;
-    }
-
-    .title-modal-leave-review {
         margin-bottom: 40px;
-        width: 300px;
     }
 
-    .line-break-title-modal-leave-review {
-        display: none;
-    }
-
-    .form-field-modal-leave-review {
-        margin-bottom: 19px;
-    }
-
-    .text-input-modal-leave-review {
+    .review-modal .buy-now-label-input {
         font-size: 18px;
-        line-height: 1.22;
     }
 
-    @media (max-height: 631px) {
-        .modal-leave-review {
-            height: 100%;
-            overflow: auto;
-        }
+    .review-modal .buy-now-message {
+        font-size: 18px;
+    }
+
+    .review-modal .buy-now-first {
+        width: 513px;
+    }
+
+    .review-modal .buy-now-label:nth-child(-n + 3) {
+        margin-bottom: 19px;
     }
 }
