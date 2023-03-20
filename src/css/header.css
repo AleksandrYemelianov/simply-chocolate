@@ -132,14 +132,32 @@
   transition: stroke var(--transition), scale var(--transition);
 }
 
-.btn-menu-close:focus {
-  transform: scale(1.42);
+.btn-menu-close:focus,
+.btn-menu-close:hover {
+  transform: scale(1.2);
   stroke: var(--accent-color);
 }
+
+/* .btn-menu-close:hover */
 
 .header-close-icon-tab,
 .menu-soc-icon-tab {
   display: none;
+}
+
+.menu-link-soc {
+  color: var(--primary-light-color);
+  transition: color var(--transition);
+}
+
+.menu-soc-icon-tab,
+.menu-soc-icon-mob {
+  stroke: currentColor;
+}
+
+.menu-link-soc:hover,
+.menu-link-soc:focus {
+  color: var(--accent-color);
 }
 
 .menu-list-nav {
@@ -201,10 +219,6 @@
   .btn-menu-close {
     width: 32px;
     height: 32px;
-  }
-
-  .btn-menu-close:focus {
-    transform: scale(1.25);
   }
 
   .header-close-icon-tab,
