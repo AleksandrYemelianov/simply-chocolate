@@ -14,15 +14,15 @@
         font-size: 20px;
         color: var(--accent-color);
     }
-    
-    .video-item {
+
+    .icon-tumb {
         position: relative;
     }
     
     .video-icon {
         position: absolute;
         left: 45%;
-        top:45%; 
+        top:45%;
     }
     
     .ingridients-title {
@@ -30,10 +30,12 @@
     font-size: 18px;
     line-height: 1.33;
     color:var(--primary-dark-color);
-    margin-top: 0;
     margin-bottom: 20px;
     }
     
+    .icon-rank {
+        border-radius: 15px;
+    }
     
     .ingridients-item {
         padding-left: 16px;
@@ -65,7 +67,6 @@
         display: flex;
         flex-direction: column;
         gap: 18px;
-        position: relative;
     }
     
     
@@ -79,6 +80,7 @@
         .made-title {
             font-size: 24px;
             line-height: 0.85;
+            margin-bottom: 50px;
         }
     
         .made-subtitle {
@@ -103,14 +105,11 @@
             display:flex;
             flex-direction: column;
             justify-content: center;
-            width: 614px;
-            margin-top: 0;
         }
-    
         .video-icon {
             position: absolute;
-            top: 46%;
             left: 49%;
+            top: 49%;
         }
     
     }
@@ -123,25 +122,14 @@
             gap: 20px;
         }
     
-        .video-icon {
-            position: absolute;
-            left: 49%;
-            top: 49%;
-        }
-        
-    
         .ingridients-list {
             display: flex;
             gap: 24px;
         }
     
         .made-paragraph {
-            width: 516px;
             padding-bottom: 94px;
-        }
-    
-        .picture-wrap {
-            height: 100%;
+            margin-top: 0;
         }
     
         .new-line {
@@ -150,6 +138,10 @@
     
         .desktop-line {
             display: block;
+        }
+
+        .icon-rank {
+            height: 100%;
         }
     
     }
