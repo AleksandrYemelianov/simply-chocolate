@@ -23,7 +23,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-a838beba.js"></script>
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-c9f13324.js"></script>
     <link rel="stylesheet" href="/simply-chocolate/assets/index-bdd3170b.css">
   </head>
   <body>
@@ -179,7 +179,6 @@
     </div>
   </div>
 </header>
-
 
       <main>
         <!-- /* Hero */ -->
@@ -838,7 +837,7 @@
           class="button button--large button__accent btn-top-sellers"
           type="button"
         >
-          > Buy now
+          Buy now
         </button>
       </div>
     </div>
@@ -1344,17 +1343,145 @@
 </div>
 <div class="overlay js-overlay-modal"></div>
 
+      <div class="modal modal-leave-review" data-modal="modal-review">
+  <div class="btn-wrap">
+    <button type="button" class="btn-close-leave-review js-modal-close">
+      <svg class="icon-close-modal js-modal-close">
+        <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="container-modal-leave-review">
+    <h2 class="title-modal-leave-review title">
+      leave a review <br class="line-break-title-modal-leave-review" />
+      about
+      <span class="accent-title-modal-leave-review">our chocolate</span>
+    </h2>
+    <form class="form-modal-leave-review" required>
+      <div class="form-field-modal-leave-review">
+        <input
+          type="text"
+          class="input-modal text-input-modal-leave-review"
+          name="name-review"
+          placeholder="Name"
+          required
+          pattern=".{2,20}"
+          title="The number of characters should not exceed 20"
+        />
+      </div>
+      <div class="form-field-modal-leave-review">
+        <input
+          type="email"
+          class="input-modal text-input-modal-leave-review"
+          name="email-review"
+          placeholder="Enter your email"
+          pattern=".{5,40}"
+          title="The number of characters should not be less than 5 and should not exceed 40"
+          required
+        />
+      </div>
+      <div class="form-field-modal-leave-review">
+        <div class="country-container"></div>
+        <input
+          type="tel"
+          class="input-modal phone-input text-input-modal-leave-review"
+          name="tel-review"
+          placeholder="Phone number"
+          pattern="^\+[0-9]{12}$"
+          title="Number of digits should not be 12"
+          required
+        />
+      </div>
+      <div class="form-field-modal message-form-field-modal-leave-review">
+        <textarea
+          class="input-modal message-modal-leave-review text-input-modal-leave-review"
+          name="message-review"
+          placeholder="Enter text"
+          pattern="^[a-zA-Z]{5,500}"
+          title="The number of characters should not be less than 4 and should not exceed 500"
+          minlength="4"
+          maxlength="500"
+          required
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="button js-open-modal js-modal-close"
+        data-modal="modal-feedback"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
+
+      <div data-modal-expl class="backdrop__modal-expl is-hidden">
+  <!-- class="backdrop is-hidden" -->
+  <div class="modal-expl">
+    <button data-modal-close-expl class="modal-exp__btn--close" type="button">
+      <svg class="modal-exp__close--icon" width="12" height="12">
+        <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-mob"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="/simply-chocolate/assets/explore-mobile@2x-8b8cdae4.jpg "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="/simply-chocolate/assets/explore-1200-4ded5a1f.jpg , /simply-chocolate/assets/explore-1200@2x-eb944ed4.jpg "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/simply-chocolate/assets/explore-1200-4ded5a1f.jpg , /simply-chocolate/assets/explore-1200@2x-eb944ed4.jpg "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="/simply-chocolate/assets/explore-mobile-61cdd806.jpg"
+        alt="bar of chocolate"
+      />
+    </picture>
+    <form class="modal-expl__form">
+      <div class="modal-expl__wrapper">
+        <p class="title">
+          Explore our<br />
+          <span class="title__accent">new chocolate</span>
+          first!
+        </p>
+        <label for="modal-expl__form" class="title">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            class="modal-expl__input"
+          />
+        </label>
+      </div>
+      <button type="submit" class="button button__accent button__accent--expl">
+        Submit
+      </button>
+    </form>
+  </div>
+  <!-- Explore our<br />
+          <span class="title__accent">new chocolate</span>
+          first! -->
+  <!-- id="modal-expl__form" -->
+</div>
+
+
       <!-- ========= JS ======== -->
       
 
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-      <script src="partials/js/our-products.js"></script>
-      <script src="partials/js/open-modal.js"></script>
-      <script src="partials/js/modal.js"></script>
+      <script src="./js/our-products.js"></script>
       <script src="
-    https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js
-    "></script>
-      <script src="script-swiper.js"></script>
+https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js
+"></script>
+      <script src="./js/script-swiper.js"></script>
     </div>
   </body>
 </html>
