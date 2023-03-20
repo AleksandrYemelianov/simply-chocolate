@@ -23,8 +23,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-2c5a3f23.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-e04d0900.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-eaa49eda.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-2a08c694.css">
   </head>
   <body>
     <div class="body-wrap">
@@ -883,64 +883,34 @@
 
 
       <!-- ======= modal ======= -->
-      <div class="backdrop is-hidden">
-  <div class="modal__thank">
-    <button class="modal__thank--close" type="button" data-modal-close>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="none"
-      >
-        <path
-          stroke="url(#a)"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          d="m12 4-8 8"
-        />
-        <path
-          stroke="url(#b)"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="1.5"
-          d="m4 4 8 8"
-        />
-        <defs>
-          <linearGradient
-            id="a"
-            x1="8.035"
-            x2="7.761"
-            y1="4"
-            y2="11.992"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#F16529" />
-            <stop offset="1" stop-color="#D44528" />
-          </linearGradient>
-          <linearGradient
-            id="b"
-            x1="8.035"
-            x2="7.761"
-            y1="4"
-            y2="11.992"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#F16529" />
-            <stop offset="1" stop-color="#D44528" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </button>
-    <h2 class="modal__thank--title">thank you!</h2>
-    <p class="modal__thank--text">
-      We are glad that you ordered our chocolate and we are giving you a 20%
-      discount on all our products.
-    </p>
-  </div>
+      <div class="modal__thank modal" data-modal="1">
+  <button class="modal__thank--close modal__cross js-modal-close" type="button">
+    <svg class="modal__thank--close-icon" width="16" height="16">
+      <use href="../images/svg/icons.svg#icon-modal-close-mob"></use>
+    </svg>
+  </button>
+  <h2 class="modal__thank--title">thank you!</h2>
+  <p class="modal__thank--text">
+    We are glad that you ordered our chocolate and we are giving you a 20%
+    discount on all our products.
+  </p>
 </div>
+<div class="overlay js-overlay-modal"></div>
 
-      
+      <div class="modal__thank modal__feedback modal" data-modal="2">
+  <button class="modal__thank--close modal__cross js-modal-close" type="button">
+    <svg class="modal__thank--close-icon" width="16" height="16">
+      <use href="../images/svg/icons.svg#icon-modal-close-mob"></use>
+    </svg>
+  </button>
+  <h2 class="modal__thank--title">
+    thank you <br />
+    for your feedback!
+  </h2>
+  <p class="modal__thank--text">We are so happy to hear from you!</p>
+</div>
+<div class="overlay js-overlay-modal"></div>
+
       <div data-modal-expl class="backdrop__modal-expl is-hidden">
   <!-- class="backdrop is-hidden" -->
   <div class="modal-expl">
