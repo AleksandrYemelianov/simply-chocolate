@@ -1,23 +1,33 @@
-.backdrop {
-  position: fixed;
-  top: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(46, 47, 66, 0.4);
-}
-
-.is-hidden {
+.overlay {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  z-index: 20;
+  transition: opacity var(--transition), background-color var(--transition);
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal__thank {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 30;
   transform: translate(-50%, -50%) scale(1);
 
   width: 311px;
@@ -43,11 +53,17 @@
 
   background-image: url(../images/modal/choc-abs-mob-1x.png);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
-/* .backdrop.is-hidden .modal__thank {
-  transform: translate(-50%, -50%) scale(0);
-} */
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .modal__thank::after {
+    background-image: url(../images/modal/choc-abs-mob-2x.png);
+  }
+}
 
 .modal__thank--close {
   position: absolute;
@@ -64,6 +80,21 @@
   border: transparent;
   border-radius: 50%;
   outline: none;
+
+  color: var(--accent-color);
+
+  transition: transform var(--transition), color var(--transition),
+    background-color var(--transition);
+}
+
+.modal__thank--close:is(:hover, :focus) {
+  color: var(--primary-dark-color);
+  background-color: transparent;
+  transform: scale(1.5);
+}
+
+.modal__thank--close-icon {
+  stroke: currentColor;
 }
 
 .modal__thank--title {
@@ -84,4 +115,54 @@
   letter-spacing: -0.02em;
 
   color: var(--primary-light-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal__thank {
+    width: 516px;
+    min-height: 414px;
+    padding: 154px 44px 154px 163px;
+  }
+
+  .modal__thank::after {
+    content: '';
+
+    height: 516px;
+
+    background-image: url(../images/modal/choc-tab_deks-1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal__thank::after {
+      background-image: url(../images/modal/choc-tab_deks-2x.png);
+    }
+  }
+
+  .modal__thank--close {
+    top: 24px;
+    right: 26px;
+
+    width: 38px;
+    height: 38px;
+  }
+
+  .modal__thank--close-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .modal__thank--title {
+    padding-bottom: 8px;
+
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .modal__thank--text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
