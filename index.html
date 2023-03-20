@@ -23,8 +23,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-c9f13324.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-bdd3170b.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-eaa49eda.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-0c0d382a.css">
   </head>
   <body>
     <div class="body-wrap">
@@ -834,7 +834,8 @@
           was first discovered by the Native American tribe called the Mayans.
         </p>
         <button
-          class="button button--large button__accent btn-top-sellers"
+          class="button button--large button__accent btn-top-sellers js-open-modal"
+          data-modal="1"
           type="button"
         >
           Buy now
@@ -974,7 +975,13 @@
       </div>
       <div class="swiper-pagination swiper-pagination-reviews"></div>
     </div>
-    <button class="button reviews-btn" type="button">Leave a review</button>
+    <button
+      class="button reviews-btn js-open-modal"
+      data-modal="3"
+      type="button"
+    >
+      Leave a review
+    </button>
   </div>
 </section>
 
@@ -1083,7 +1090,7 @@
 </footer>
 
       <!-- ======= modal ======= -->
-      <div class="modal__thank modal" data-modal="1">
+      <div class="modal__thank modal" data-modal="2">
   <button class="modal__thank--close modal__cross js-modal-close" type="button">
     <svg class="modal__thank--close-icon" width="16" height="16">
       <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-mob"></use>
@@ -1097,7 +1104,7 @@
 </div>
 <div class="overlay js-overlay-modal"></div>
 
-      <div class="modal__thank modal__feedback modal" data-modal="2">
+      <div class="modal__thank modal__feedback modal" data-modal="4">
   <button class="modal__thank--close modal__cross js-modal-close" type="button">
     <svg class="modal__thank--close-icon" width="16" height="16">
       <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-mob"></use>
@@ -1111,9 +1118,9 @@
 </div>
 <div class="overlay js-overlay-modal"></div>
 
-      <div class="modal modal-buynow" data-modal="modal-buy-now">
-  <button class="modal-buynow-close" type="button">
-    <svg class="icon-close-modal js-modal-close" width="24" height="24">
+      <div class="modal modal-buynow" data-modal="1">
+  <button class="modal-buynow-close js-modal-close" type="button">
+    <svg class="icon-close-modal" width="24" height="24">
       <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
     </svg>
   </button>
@@ -1333,8 +1340,8 @@
       </div>
       <button
         class="button submit-buynow js-open-modal"
+        data-modal="2"
         type="submit"
-        data-modal="modal-hero"
       >
         Submit
       </button>
@@ -1343,10 +1350,10 @@
 </div>
 <div class="overlay js-overlay-modal"></div>
 
-      <div class="modal modal-leave-review" data-modal="modal-review">
+      <div class="modal modal-leave-review" data-modal="3">
   <div class="btn-wrap">
     <button type="button" class="btn-close-leave-review js-modal-close">
-      <svg class="icon-close-modal js-modal-close">
+      <svg class="icon-close-modal">
         <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
       </svg>
     </button>
@@ -1404,11 +1411,7 @@
           required
         ></textarea>
       </div>
-      <button
-        type="submit"
-        class="button js-open-modal js-modal-close"
-        data-modal="modal-feedback"
-      >
+      <button type="submit" class="button js-open-modal" data-modal="4">
         Send
       </button>
     </form>
