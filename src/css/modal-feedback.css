@@ -1,0 +1,16 @@
+.modal__feedback {
+  padding-left: 58px;
+}
+
+.modal__feedback .modal__thank--text {
+  width: 180px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__feedback {
+    padding: 163px 49px 163px 170px;
+  }
+  .modal__feedback .modal__thank--text {
+    width: 297px;
+  }
+}

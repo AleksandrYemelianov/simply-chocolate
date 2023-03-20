@@ -1,8 +1,7 @@
-const swiper = new Swiper('.swiper', {
+new Swiper('.reviews-swiper', {
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-reviews',
     clickable: true,
-    dynamicBullets: true,
   },
   breakpoints: {
     // when window width is >= 320px

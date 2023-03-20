@@ -1,3 +1,9 @@
+.body-wrap {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 14px;
@@ -16,8 +22,8 @@
 
 .header-logo {
   display: flex;
-  width: 144px;
-  height: 18px;
+  align-items: center;
+  gap: 4px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -25,40 +31,75 @@
   color: var(--primary-dark-color);
 }
 
+.header-logo-icon-mob,
+.header-logo-icon-desk {
+  fill: transparent;
+  stroke: var(--accent-color);
+}
+
+.header-logo-icon-desk,
+.header-list-nav,
+.header-list-soc,
+.header-menu-icon-tab {
+  display: none;
+}
+
 .accent-logo {
   font-style: italic;
 }
 
-.header-list-nav {
-  display: none;
+.header-soc-icon {
+  fill: transparent;
+  stroke: var(--primary-dark-color);
+  transition: stroke var(--transition);
 }
 
-.header-list-soc {
-  display: none;
+.header-soc-icon:is(:hover, :focus, :active) {
+  stroke: var(--accent-color);
 }
 
-.header-menu-icon-tab {
-  display: none;
+.btn-menu {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.header-menu-icon-mob {
+  stroke: var(--primary-dark-color);
 }
 
 /* ---------- MOB MENU --------------- */
 
 .mob-menu {
   font-weight: 500;
-  position: fixed;
-  z-index: 10000;
+  position: absolute;
+  z-index: 1000;
   top: 0;
   right: 0;
-  width: 68%;
-  height: 100%;
+  width: 220px;
+  height: 100vh;
   color: var(--primary-light-color);
   background: var(--primary-background-color);
   overflow-y: auto;
-  transform: translateX(100%);
+  visibility: visible;
+  transition: transform var(--transition);
 }
 
-.mob-menu.is-open {
-  transform: translateX(0);
+.mob-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(220px);
+  transition: transform var(--transition);
+}
+
+.menu-link-nav {
+  transition: font-weight var(--transition), color var(--transition),
+    padding-bottom var(--transition), border-bottom var(--transition);
 }
 
 .menu-link-nav:is(:hover, :focus, :active) {
@@ -72,19 +113,51 @@
   height: 100%;
   width: 220px;
   padding: 20px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .btn-menu-close {
-  display: flex;
   margin-left: auto;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-style: none;
+  stroke: var(--primary-light-color);
+  transform: scale(1);
+  transition: stroke var(--transition), scale var(--transition);
 }
 
-.header-close-icon-tab {
+.btn-menu-close:focus,
+.btn-menu-close:hover {
+  transform: scale(1.2);
+  stroke: var(--accent-color);
+}
+
+/* .btn-menu-close:hover */
+
+.header-close-icon-tab,
+.menu-soc-icon-tab {
   display: none;
+}
+
+.menu-link-soc {
+  color: var(--primary-light-color);
+  transition: color var(--transition);
+}
+
+.menu-soc-icon-tab,
+.menu-soc-icon-mob {
+  stroke: currentColor;
+}
+
+.menu-link-soc:hover,
+.menu-link-soc:focus {
+  color: var(--accent-color);
 }
 
 .menu-list-nav {
@@ -101,6 +174,16 @@
   gap: 18px;
 }
 
+.menu-item-soc {
+  fill: transparent;
+  stroke: var(--primary-light-color);
+  transition: stroke var(--transition);
+}
+
+.menu-item-soc:is(:hover, :focus) {
+  stroke: var(--accent-color);
+}
+
 /* ------------ TABLET -------------- */
 
 @media screen and (min-width: 768px) {
@@ -112,14 +195,20 @@
     display: none;
   }
 
+  .btn-menu {
+    width: 32px;
+    height: 32px;
+  }
+
   .header-menu-icon-tab {
     display: block;
+    stroke: var(--primary-dark-color);
   }
 
   /* ----------- TAB MOB MENU ----------- */
 
   .mob-menu {
-    width: 38%;
+    width: 290px;
   }
 
   .menu-container {
@@ -127,12 +216,19 @@
     padding: 24px 32px;
   }
 
-  .header-close-icon-mob {
-    display: none;
+  .btn-menu-close {
+    width: 32px;
+    height: 32px;
   }
 
-  .header-close-icon-tab {
+  .header-close-icon-tab,
+  .menu-soc-icon-tab {
     display: block;
+  }
+
+  .header-close-icon-mob,
+  .menu-soc-icon-mob {
+    display: none;
   }
 }
 
@@ -145,14 +241,17 @@
 
   .header-logo {
     margin-right: 188px;
-    width: 185px;
-    height: 20px;
     font-size: 18px;
     line-height: 1.11;
   }
 
+  .header-logo-icon-mob,
   .btn-menu {
     display: none;
+  }
+
+  .header-logo-icon-desk {
+    display: block;
   }
 
   .header-list-nav {
@@ -164,6 +263,10 @@
     margin-right: 137px;
   }
 
+  .header-link-nav {
+    transition: color var(--transition);
+  }
+
   .header-link-nav:is(:hover, :focus, :active) {
     color: var(--accent-color);
   }
@@ -171,5 +274,19 @@
   .header-list-soc {
     display: flex;
     gap: 18px;
+  }
+
+  .header-item-soc {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-link-soc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
   }
 }

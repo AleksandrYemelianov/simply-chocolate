@@ -1,0 +1,60 @@
+<div data-modal-expl class="backdrop__modal-expl is-hidden">
+  <!-- class="backdrop is-hidden" -->
+  <div class="modal-expl">
+    <button data-modal-close-expl class="modal-exp__btn--close" type="button">
+      <svg class="modal-exp__close--icon" width="12" height="12">
+        <use href="../images/svg/icons.svg#icon-modal-close-mob"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="../images/modal-explore/explore-mobile@2x.jpg"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ../images/modal-explore/explore-1200.jpg,
+          ../images/modal-explore/explore-1200@2x.jpg
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ../images/modal-explore/explore-768.jpg,
+          ../images/modal-explore/explore-768@2x.jpg
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="../images/modal-explore/explore-mobile.jpg"
+        alt="bar of chocolate"
+      />
+    </picture>
+    <form class="modal-expl__form">
+      <div class="modal-expl__wrapper">
+        <p class="title">
+          Explore our<br />
+          <span class="title__accent">new chocolate</span>
+          first!
+        </p>
+        <label for="modal-expl__form" class="title">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            class="modal-expl__input"
+          />
+        </label>
+      </div>
+      <button type="submit" class="button button__accent button__accent--expl">
+        Submit
+      </button>
+    </form>
+  </div>
+  <!-- Explore our<br />
+          <span class="title__accent">new chocolate</span>
+          first! -->
+  <!-- id="modal-expl__form" -->
+</div>
