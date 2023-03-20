@@ -33,6 +33,9 @@
     margin-bottom: 20px;
     }
     
+    .icon-rank {
+        border-radius: 15px;
+    }
     
     .ingridients-item {
         padding-left: 16px;
