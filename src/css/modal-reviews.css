@@ -1,120 +1,124 @@
 .modal-leave-review {
-    width: 311px;
-    height: 471px;
-    z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  width: 311px;
+  height: 471px;
 
-    background-color: #FAFAFA;
+  background-color: #fafafa;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .btn-wrap {
-    display: flex;
+  display: flex;
 }
 
 .btn-close-leave-review {
-    margin-left: auto;
-    margin-right: 14px;
-    margin-top: 14px;
+  margin-left: auto;
+  margin-right: 14px;
+  margin-top: 14px;
 
-    background-color: inherit;
-    border: none;
-    padding: 0;
+  background-color: inherit;
+  border: none;
+  padding: 0;
 
-    stroke: #111111;
+  stroke: #111111;
 }
 
 .container-modal-leave-review {
-    padding: 0 24px;
+  padding: 0 24px;
 }
 
 .title-modal-leave-review {
-    color: #111111;
-    text-align: left;
+  color: #111111;
+  text-align: left;
 }
 
 .accent-title-modal-leave-review {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .form-field-modal-leave-review {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .message-form-field-modal-leave-review {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .iti--separate-dial-code .iti__selected-flag {
-    background-color: inherit;
+  background-color: inherit;
 }
 
 .iti {
-    width: 100%;
+  width: 100%;
 }
 
 .message-modal-leave-review {
-    height: 91px;
+  height: 91px;
 }
 
 .text-input-modal-leave-review {
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: -0.02em;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
 }
 
 @media screen and (max-width: 310px) {
-    .modal-leave-review {
-        width: 100%;
-    }
+  .modal-leave-review {
+    width: 100%;
+  }
 }
 
 @media (max-height: 472px) {
-    .modal-leave-review {
-        height: 100%;
-        overflow: auto;
-    }
+  .modal-leave-review {
+    height: 100%;
+    overflow: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .modal-leave-review {
+    width: 517px;
+    height: 631px;
+  }
+
+  .container-modal-leave-review {
+    padding: 0 40px;
+  }
+
+  .btn-close-leave-review {
+    margin-right: 24px;
+    margin-top: 24px;
+  }
+
+  .message-modal-leave-review {
+    height: 137px;
+  }
+
+  .title-modal-leave-review {
+    margin-bottom: 40px;
+    width: 300px;
+  }
+
+  .line-break-title-modal-leave-review {
+    display: none;
+  }
+
+  .form-field-modal-leave-review {
+    margin-bottom: 19px;
+  }
+
+  .text-input-modal-leave-review {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  @media (max-height: 631px) {
     .modal-leave-review {
-        width: 517px;
-        height: 631px;
+      height: 100%;
+      overflow: auto;
     }
-
-    .container-modal-leave-review {
-        padding: 0 40px;
-    }
-
-    .btn-close-leave-review {
-        margin-right: 24px;
-        margin-top: 24px;
-    }
-
-    .message-modal-leave-review {
-        height: 137px;
-    }
-
-    .title-modal-leave-review {
-        margin-bottom: 40px;
-        width: 300px;
-    }
-
-    .line-break-title-modal-leave-review {
-        display: none;
-    }
-
-    .form-field-modal-leave-review {
-        margin-bottom: 19px;
-    }
-
-    .text-input-modal-leave-review {
-        font-size: 18px;
-        line-height: 1.22;
-    }
-
-    @media (max-height: 631px) {
-        .modal-leave-review {
-            height: 100%;
-            overflow: auto;
-        }
-    }
+  }
 }

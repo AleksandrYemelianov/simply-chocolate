@@ -1,196 +1,201 @@
 .modal-buynow {
-    min-width: 311px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0) scale(1);
-    background-color: #fafafa;
-    border-radius: 15px;
-    overflow-y: scroll;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  min-width: 311px;
+  height: 100%;
+
+  transform: translate(-50%, -50%) scale(1);
+  background-color: #fafafa;
+  border-radius: 15px;
+  overflow-y: scroll;
 }
 
 .buynow-container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-    max-width: 293px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 293px;
 }
 
 .modal-buynow-close {
-    position: absolute;
-    right: 14px;
-    top: 14px;
-    background-color: transparent;
-    border-color: transparent;
-    padding: 0;
-    width: 24px;
-    height: 24px;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .buynow-close {
-    stroke: #111;
+  stroke: #111;
 }
 
 .buynow-title {
-    color: var(--accent-color);
-    padding-top: 32px;
+  color: var(--accent-color);
+  padding-top: 32px;
 }
 
 .buynow-title-now {
-    color: #111111;
+  color: #111111;
 }
 
 .buynow-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    height: 100%;
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  margin-bottom: 60px;
 }
 
 .buynow-item {
-    background-color: #fff;
-    padding: 32px 32px 28px;
-    border-radius: 15px;
-    min-width: 231px;
+  background-color: #fff;
+  padding: 32px 32px 28px;
+  border-radius: 15px;
+  min-width: 231px;
 }
 
-.buynow-list>.buynow-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.buynow-list > .buynow-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .buynow-img {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .buynow-button {
-    min-width: 94px;
-    min-height: 33px;
-    background: #fafafa;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 100px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    color: #111111;
+  min-width: 94px;
+  min-height: 33px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #111111;
 }
 
 .buynow-form {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
 }
 
 .label-buynow {
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: -0.02em;
-    color: #000000;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .buynow-comment {
-    resize: none;
-    height: 91px;
+  resize: none;
+  height: 91px;
 }
 
 .submit-buynow {
-    max-width: 110px;
-    border-color: transparent;
+  max-width: 110px;
+  border-color: transparent;
 }
 
 .name-buynow {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .buynow-marg {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .input-buynow-wrap {
-    position: relative;
+  position: relative;
 }
 
 .mcard-buynow {
-    position: absolute;
-    top: 12px;
-    right: 14px;
+  position: absolute;
+  top: 12px;
+  right: 14px;
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+}
 
 @media screen and (min-width: 768px) {
-    .modal-buynow {
-        min-width: 609px;
-    }
+  .modal-buynow {
+    min-width: 609px;
+  }
 
-    .buynow-container {
-        min-width: 513px;
-    }
+  .buynow-container {
+    min-width: 513px;
+  }
 
-    .buynow-list {
-        max-width: 513px;
-    }
+  .buynow-list {
+    max-width: 513px;
+  }
 
-    .buynow-item {
-        padding: 24px 20px 0;
-        min-width: 160px;
-    }
+  .buynow-item {
+    padding: 24px 20px 0;
+    min-width: 160px;
+  }
 
-    .buynow-item {
-        padding: 24px 20px 18px;
-        width: calc((100% - 32px) / 3);
-    }
+  .buynow-item {
+    padding: 24px 20px 18px;
+    width: calc((100% - 32px) / 3);
+  }
 
-    .buynow-img {
-        margin-bottom: 14px;
-    }
+  .buynow-img {
+    margin-bottom: 14px;
+  }
 
-    .buynow-title {
-        padding-top: 48px;
-    }
+  .buynow-title {
+    padding-top: 48px;
+  }
 
-    .buynow-form {
-        padding-bottom: 48px;
-    }
+  .buynow-form {
+    padding-bottom: 48px;
+  }
 
-    .name-buynow {
-        flex-direction: row;
-        justify-content: space-between;
-        min-width: calc((100% - 21px) / 2);
-        gap: 21px;
-    }
+  .name-buynow {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: calc((100% - 21px) / 2);
+    gap: 21px;
+  }
 
-    .buynow-marg {
-        margin-bottom: 18px;
-    }
+  .buynow-marg {
+    margin-bottom: 18px;
+  }
 
-    .submit-buynow {
-        max-width: 133px;
-    }
+  .submit-buynow {
+    max-width: 133px;
+  }
 
-    .mcard-buynow {
-        top: 18px;
-        right: 24px;
-        width: 44px;
-        height: 30px;
-    }
+  .mcard-buynow {
+    top: 18px;
+    right: 24px;
+    width: 44px;
+    height: 30px;
+  }
 
-    .buynow-comment {
-        height: 137px;
-    }
+  .buynow-comment {
+    height: 137px;
+  }
 
-    .label-buynow {
-        font-size: 14px;
-        line-height: calc(18 / 14);
-    }
+  .label-buynow {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+}
