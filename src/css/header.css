@@ -150,7 +150,8 @@
   transition: color var(--transition);
 }
 
-.menu-soc-icon-tab {
+.menu-soc-icon-tab,
+.menu-soc-icon-mob {
   stroke: currentColor;
 }
 
