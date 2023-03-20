@@ -21,8 +21,9 @@
     
     .video-icon {
         position: absolute;
-        left: 45%;
-        top:45%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     
     .ingridients-title {
@@ -106,11 +107,6 @@
             flex-direction: column;
             justify-content: center;
         }
-        .video-icon {
-            position: absolute;
-            left: 49%;
-            top: 49%;
-        }
     
     }
     
@@ -128,7 +124,6 @@
         }
     
         .made-paragraph {
-            padding-bottom: 94px;
             margin-top: 0;
         }
     
