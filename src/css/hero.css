@@ -50,7 +50,6 @@
   line-height: 1.17;
   letter-spacing: -0.03em;
   color: var(--primary-light-color);
-  transition: color var(--transition);
 }
 
 .hero__scroll--title:hover,
