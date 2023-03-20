@@ -47,19 +47,30 @@ height: 68px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
-    letter-spacing: -0.02em;
     color: var(--primary-light-color);
     margin-bottom: 4px;
+    transition: color var(--transition);
+}
+
+.footer-tel:hover, .footer-tel:focus{
+    color: var(--accent-color);
 }
 
 .footer-mailto{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
-    letter-spacing: -0.02em;
     color: var(--primary-light-color);
-    margin-bottom: 0px;   
+    margin-bottom: 0px; 
+    transition: color var(--transition);
+  
 }
+
+
+.footer-mailto:hover, .footer-mailto:focus{
+    color: var(--accent-color);
+}
+
 
 .footer-ul-svg{
     display: flex;
@@ -73,6 +84,15 @@ height: 68px;
     margin-right: 0;
 }
 
+.footer-svg-a{
+    color: var(--primary-light-color);
+    transition: color var(--transition);
+}
+
+.footer-svg-a:hover, .footer-svg-a:focus, .footer-svg-a:active {
+    color: var(--accent-color);
+    
+}
 
 
 .footer-div-svg{
@@ -80,6 +100,13 @@ height: 68px;
     height: 22px;
     margin-left: 113px;
     
+}
+.footer-svg {
+    display: block;
+    fill: transparent;
+    stroke: currentColor;
+    width:22px; 
+    height:22px;
 }
 
 .footer-ul-svg{
@@ -93,23 +120,13 @@ height: 68px;
     margin-right: 0px;
 }
 
-.footer-use-svg{
-    width: 22px;
-    height: 22px;
-}
 
-.footer-a-svg:hover, .footer-a-svg:focus{
-    color:var(#fd9222);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-svg-a{
-    transition: var(--transition);
 
-}
-.footer-svg-a:hover, .footer-svg-a:active, .footer-svg-a:focus{
-    stroke: var(--accent-color);
-}
+
+
+
+
 .footer-hr{
  margin-top: 0%;
  margin-bottom: 0%;
@@ -121,13 +138,7 @@ transform: rotate(180deg);
     margin-top: 32px;
 }
 
-.footer-ul-menu{
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: -0.02em;
-color: var(--primary-light-color);
-}
+
 
 .footer-li-menu{
     margin-bottom: 18px;
@@ -146,7 +157,11 @@ color: var(--primary-light-color);
 }
 
 .footer-menu-a{
-    transition: var(--transition);
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+color: var(--primary-light-color);
+transition: color var(--transition);
 }
 
 .footer-menu-a:hover, .footer-menu-a:focus, .footer-menu-a:active{
@@ -163,8 +178,6 @@ color: var(--primary-light-color);
 
 @media screen and (min-width :768px){
         .footer-one{
-            /* margin-left: auto;
-            margin-right: auto; */
             background:var(--primary-background-color);
             padding-top: 50px;
         padding-bottom: 50px;
@@ -220,13 +233,16 @@ color: var(--primary-light-color);
             margin-left: 50px;
         }
 
-        .footer-svg-a{
-            transition: var(--transition);
-        
+
+        .footer-li-svg{
+            margin-right: 19px; 
+         }
+
+        .footer-svg{
+            width:24px; 
+            height:24px;
         }
-        .footer-svg-a:hover, .footer-svg-a:active, .footer-svg-a:focus{
-            stroke: var(--accent-color);
-        }
+      
 
     .footer-ul-menu{
         display: flex;
@@ -234,12 +250,10 @@ color: var(--primary-light-color);
         
         }
 
-    .footer-ul-menu{
-        width: 532px;
+    .footer-menu-a{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        letter-spacing: -0.02em;
         color: var(--primary-light-color);
     }
     .footer-li-menu{
@@ -272,6 +286,9 @@ color: var(--primary-light-color);
             margin-bottom: 62px;
             }
             
+            .footer-li-svg{
+                margin-right: 19px; 
+             }
 
             .footer-page-name{
                 font-size: 28px;
@@ -289,13 +306,13 @@ color: var(--primary-light-color);
             .footer-div-svg{
                 margin-left: 63px;
             }
-            .footer-svg-a{
-                transition: var(--transition);
             
+
+            .footer-svg{
+                width:24px; 
+                height:24px;
             }
-            .footer-svg-a:hover, .footer-svg-a:active, .footer-svg-a:focus{
-                fill: var(--accent-color);
-            }
+          
            .footer-menu{
             display: flex;
             margin-top: 24px;
@@ -305,7 +322,6 @@ color: var(--primary-light-color);
 
            .footer-ul-menu{
             display: flex;
-            width: 532px;
            
 
            }

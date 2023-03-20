@@ -10,7 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 621px;
-  max-width: 375px;
+  max-width: 335px;
   position: relative;
   margin: 0 auto;
   border-radius: 30px;
@@ -29,34 +29,66 @@
   text-transform: none;
   width: 278px;
 }
+
+.hero__tablet--btn--scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .hero__scroll--wrap {
   display: flex;
   align-items: center;
 }
 
 .hero__scroll--title {
+  display: flex;
+  gap: 14px;
+  align-items: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.03em;
   color: var(--primary-light-color);
-  margin-right: 12px;
-  transition: color var(--transition);
 }
+
 .hero__scroll--title:hover,
 .hero__scroll--title:focus {
   color: var(--accent-color);
 }
 
+.hero__scroll--title:is(:hover, :focus) .hero__scroll--link {
+  background-color: var(--accent-color);
+}
+
+.hero__scroll--title:is(:hover, :focus) .hero__scroll--item {
+  fill: var(--primary-light-color);
+}
+
+.hero__scroll--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--primary-light-color);
+  transition: background-color var(--transition);
+  transition: fill var(--transition);
+}
+
+.hero__scroll--item {
+  fill: var(--accent-color);
+}
+
 .hero__button--wrap {
   white-space: nowrap;
-  margin-bottom: 32px;
 }
 .hero__btn--1 {
   display: inline-block;
   width: 120px;
   padding: 12px 28px;
-  margin-right: 16px;
+  margin-right: 14px;
 }
 .hero__btn--2 {
   width: 159px;
@@ -77,30 +109,6 @@
   color: var(--accent-color);
 }
 
-.hero__scroll--item {
-  fill: var(--accent-color);
-}
-
-.hero__scroll--link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: var(--primary-light-color);
-  transition: background-color var(--transition);
-  transition: fill var(--transition);
-}
-.hero__scroll--link:hover,
-.hero__scroll--link:focus {
-  background-color: var(--accent-color);
-}
-.hero__scroll--link:hover .hero__scroll--item,
-.hero__scroll--link:focus .hero__scroll--item {
-  fill: var(--primary-light-color);
-}
-
 @media screen and (min-width: 768px) {
   .hero-container {
     background-image: linear-gradient(
@@ -111,6 +119,8 @@
       url(../images/hero/background@2x.jpg);
     max-width: 704px;
     height: 890px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .hero--content {
@@ -126,8 +136,7 @@
     letter-spacing: -0.03em;
   }
   .hero__tablet--btn--scroll {
-    display: flex;
-    align-items: baseline;
+    flex-direction: row;
   }
   .hero__scroll--wrap {
     margin-left: auto;
@@ -141,7 +150,18 @@
     width: 183px;
     padding: 14px 40px;
   }
+
+  .hero__scroll--title {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .hero__scroll--link {
+    width: 38px;
+    height: 38px;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   .hero-container {
     background-image: linear-gradient(

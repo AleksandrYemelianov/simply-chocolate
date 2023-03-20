@@ -1,8 +1,8 @@
-<div class="review-backdrop is-hidden js-review">
-  <div class="review-modal">
-    <button type="button" class="buy-now-btn-close js-close-menu-review">
-      <svg class="buy-now-icon-close">
-        <use href="./src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
+<div class="modal modal-leave-review" data-modal="3">
+  <div class="btn-wrap">
+    <button type="button" class="btn-close-leave-review js-modal-close">
+      <svg class="icon-close-modal">
+        <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
       </svg>
     </button>
     <h2>
@@ -56,12 +56,8 @@
           placeholder="Enter text"
           class="buy-now-message"
         ></textarea>
-      </label>
-      <button
-        type="submit"
-        class="buy-now-btn-submit js-open-feedback"
-        data-modal-open
-      >
+      </div>
+      <button type="submit" class="button js-open-modal" data-modal="4">
         Send
       </button>
     </form>
