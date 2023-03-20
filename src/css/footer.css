@@ -20,11 +20,11 @@ height: 68px;
     letter-spacing: -0.02em;
     color: var(--primary-light-color);
     margin-bottom: 32px;
-
    
 }
  .footer-mobil-svg{
     display: flex;
+    
  }
 
 
@@ -79,7 +79,28 @@ height: 68px;
     width: 58px;
     height: 22px;
     margin-left: 113px;
+    
+}
 
+.footer-ul-svg{
+    display: flex;
+}
+.footer-li-svg{
+   margin-right: 14px; 
+}
+
+.footer-li-svg:nth-child(2){
+    margin-right: 0px;
+}
+
+.footer-use-svg{
+    width: 22px;
+    height: 22px;
+}
+
+.footer-a-svg:hover, .footer-a-svg:focus{
+    color:var(#fd9222);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg-a{
@@ -98,7 +119,6 @@ transform: rotate(180deg);
 
 .footer-menu{
     margin-top: 32px;
-
 }
 
 .footer-ul-menu{
@@ -111,7 +131,15 @@ color: var(--primary-light-color);
 
 .footer-li-menu{
     margin-bottom: 18px;
+    transition: color var(--transition);
+
+
 }
+.footer-li-menu:hover {
+    color: var(--accent-color);
+}
+
+
 
 .footer-li-menu:nth-child(5){
     margin-bottom: 0px;
@@ -149,7 +177,9 @@ color: var(--primary-light-color);
         letter-spacing: -0.02em;
         color: var(--primary-light-color);
         margin-right: 124px;
-    }
+    
+        margin-bottom: 32px;  
+  }
 
     .footer-tablet-flex{
         display: flex;
@@ -201,6 +231,10 @@ color: var(--primary-light-color);
     .footer-ul-menu{
         display: flex;
 
+        
+        }
+
+    .footer-ul-menu{
         width: 532px;
         font-weight: 500;
         font-size: 14px;
@@ -227,8 +261,7 @@ color: var(--primary-light-color);
 @media screen and (min-width :1200px){
     
              .footer-one{
-                /* margin-left: auto;
-            margin-right: auto; */
+             
                 background:var(--primary-background-color);
                 padding-top: 50px;
             padding-bottom: 50px;
@@ -264,6 +297,7 @@ color: var(--primary-light-color);
                 fill: var(--accent-color);
             }
            .footer-menu{
+            display: flex;
             margin-top: 24px;
             display: flex;
 
@@ -271,6 +305,8 @@ color: var(--primary-light-color);
 
            .footer-ul-menu{
             display: flex;
+            width: 532px;
+           
 
            }
 
