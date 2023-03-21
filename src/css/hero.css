@@ -19,14 +19,13 @@
   padding-right: 20px;
 }
 
-
 .hero--title {
   text-align: start;
   font-weight: 500;
   color: var(--primary-light-color);
   margin-bottom: 32px;
   text-transform: none;
-  width: 278px;
+  max-width: 278px;
 }
 
 .hero__tablet--btn--scroll {
@@ -91,7 +90,7 @@
 }
 .hero__btn--2 {
   width: 159px;
-  padding: 12px 28px;
+  padding: 12px 27px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -124,7 +123,6 @@
   }
 
   .hero--content {
-   
     width: 624px;
   }
   .hero--title {
@@ -171,7 +169,6 @@
       url(../images/hero/background@2x.jpg);
     max-width: 1136px;
     padding-top: 381px;
-   
   }
 
   .hero--content {
