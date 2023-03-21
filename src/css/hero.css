@@ -9,17 +9,16 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 621px;
   max-width: 335px;
   position: relative;
   margin: 0 auto;
   border-radius: 30px;
+  padding-top: 395px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.hero--content {
-  position: absolute;
-  top: 375px;
-}
 
 .hero--title {
   text-align: start;
@@ -118,14 +117,14 @@
       ),
       url(../images/hero/background@2x.jpg);
     max-width: 704px;
-    height: 890px;
+    padding-top: 671px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 40px;
   }
 
   .hero--content {
-    position: absolute;
-    top: 671px;
+   
     width: 624px;
   }
   .hero--title {
@@ -171,6 +170,8 @@
       ),
       url(../images/hero/background@2x.jpg);
     max-width: 1136px;
+    padding-top: 381px;
+   
   }
 
   .hero--content {
