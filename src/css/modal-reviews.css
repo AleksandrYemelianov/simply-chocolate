@@ -1,41 +1,9 @@
 .review__modal {
   width: 311px;
-  height: 471px;
   padding: 32px 24px;
   border-radius: 15px;
 
   background: var(--background-color);
-}
-
-.review__btn-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  transform: scale(0);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0;
-  border: none;
-
-  color: var(--primary-dark-color);
-  background-color: transparent;
-
-  transition: transform var(--transition), color var(--transition);
-}
-
-.review__btn-close:is(:hover, :focus) {
-  color: var(--accent-color);
-  transform: scale(1.5);
-}
-
-.review__icon-close {
-  display: block;
-  width: 24px;
-  height: 24px;
-  stroke: currentColor;
 }
 
 .review__title {
@@ -214,6 +182,6 @@
   }
 
   .review__label-phone-input .review__label-input {
-  padding: 22px 29px 22px 177px;
-}
+    padding: 22px 29px 22px 177px;
+  }
 }
