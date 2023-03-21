@@ -10,7 +10,7 @@
 
   /* ===== color ===== */
   --primary-dark-color: #111111;
-    --primary-light-color: #ffffff;
+  --primary-light-color: #ffffff;
   --secondary-dark-color: rgba(17, 17, 17, 0.7);
   --secondary-light-color: rgba(255, 255, 255, 0.7);
   --accent-color: #fd9222;
@@ -196,7 +196,7 @@
   transform: translate(-50%, -50%);
 
   overflow: hidden;
-  
+
   opacity: 0;
   visibility: hidden;
 
@@ -208,4 +208,3 @@
   opacity: 1;
   visibility: visible;
 }
-
