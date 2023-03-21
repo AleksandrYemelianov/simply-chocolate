@@ -12,26 +12,22 @@
 }
 
 .footer-page-name{
-    width: 300px;
-height: 68px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
-    letter-spacing: -0.02em;
     color: var(--primary-light-color);
     margin-bottom: 32px;
    
 }
  .footer-mobil-svg{
     display: flex;
+    margin-bottom: 32px;
     
  }
 
 
 .footer-contact{
-    width: 164px;
-    height: 72px;
-    margin-bottom: 32px;
+    
 
 }
 
@@ -96,8 +92,7 @@ height: 68px;
 
 
 .footer-div-svg{
-    width: 58px;
-    height: 22px;
+    
     margin-left: 113px;
 }
 .footer-svg {
@@ -171,10 +166,6 @@ transition: color var(--transition);
            
 
 
-
-
-
-
 @media screen and (min-width :768px){
         .footer-one{
             background:var(--primary-background-color);
@@ -190,9 +181,12 @@ transition: color var(--transition);
         color: var(--primary-light-color);
         margin-right: 124px;
     
-        margin-bottom: 32px;  
+        margin-bottom: 0px;  
   }
 
+  .footer-mobil-svg{
+    margin-bottom: 0;
+  }
     .footer-tablet-flex{
         display: flex;
         margin-bottom: 50px;
@@ -200,7 +194,6 @@ transition: color var(--transition);
     .footer-contact{
         margin-top: 0;
         margin-bottom: 0;
-        margin-bottom: 50px;
     
     }
 
