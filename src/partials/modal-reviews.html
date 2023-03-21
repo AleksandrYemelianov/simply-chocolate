@@ -1,66 +1,63 @@
-<div class="modal review-modal" data-modal="2">
-  <div class="btn-wrap">
-    <button type="button" class="btn-close-leave-review js-modal-close">
-      <svg class="icon-close-modal">
+<div class="modal review__modal" data-modal="2">
+    <button type="button" class="review__btn-close js-modal-close">
+      <svg class="review__icon-close">
         <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
       </svg>
     </button>
-    <h2>
+    <h2 class="review__title">
       leave a review about
-      <span class="buy-now-title-accent">our chocolate</span>
+      <span class="review__title-accent">our chocolate</span>
     </h2>
-    <form class="buy-now-modal-form">
-      <label class="buy-now-label">
+    <form class="review__form">
+      <label class="review__label">
         <input
           type="text"
           name="user_name"
           required
-          class="buy-now-label-input buy-now-first"
+          class="review__input"
           placeholder="Name"
           pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
           minlength="2"
         />
       </label>
-      <label class="buy-now-label">
+      <label class="review__label">
         <input
           type="email"
           name="user_email"
           required
-          class="buy-now-label-input buy-now-label-input-three"
+          class="review__label-input"
           placeholder="Enter your email"
+          pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        title="mail@mail.com"
         />
       </label>
-      <label class="buy-now-label">
-        <span class="buy-now-label-phone-input"
+      <label class="review__label">
+        <span class="review__label-phone-input"
           ><input
             type="tel"
             name="user-phone"
             required
             pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
             title="xx-xxx-xx-xx"
-            class="buy-now-label-input buy-now-label-input-phone buy-now-label-input-three"
+            class="review__label-input"
             placeholder="Phone number"
           />
-          <div class="buy-now-phone-decor">
-            <svg class="buy-now-label-icon">
-              <use href="./src/images/svg/icons.svg#icon-flag-dsktp-tab"></use>
-            </svg>
-            <span class="buy-now-label-phone-number">+380</span>
-            <span class="buy-now-line"></span>
-          </div>
+          <svg class="review__icon-flag">
+            <use href="./images/svg/icons.svg#icon-flag-dsktp-tab"></use>
+          </svg>
+          <span class="review__label-phone">+380</span>
         </span>
       </label>
-      <label class="buy-now-label">
+      <label class="review__label">
         <textarea
           name="user_message"
           placeholder="Enter text"
-          class="buy-now-message"
+          class="review__message"
         ></textarea>
-      </div>
-      <button type="submit" class="button js-modal-close" data-modal="2">
+      </label>
+      <button type="submit" class="button button__accent review__btn-submit  js-modal-close" data-modal="2">
         Send
       </button>
     </form>
-  </div>
 </div>
 <div class="overlay js-overlay-modal"></div>
