@@ -47,6 +47,10 @@
   max-width: 308px;
 }
 
+.advantages-content:last-child {
+  padding-bottom: 16px;
+}
+
 .advantages-item-title {
   font-weight: 600;
   font-size: 18px;
