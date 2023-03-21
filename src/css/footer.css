@@ -22,7 +22,7 @@
  .footer-mobil-svg{
     display: flex;
     margin-bottom: 32px;
-    
+    justify-content: space-between;
  }
 
 
@@ -93,7 +93,6 @@
 
 .footer-div-svg{
     
-    margin-left: 113px;
 }
 .footer-svg {
     display: block;
