@@ -1114,7 +1114,7 @@
         <div class="buy-now__thumb">
           <div class="buy-now__wrapper">
             <picture>
-              <source
+              <!-- <source
                 srcset="
                   ./images/modal-order/order-1-375.png    1x,
                   ./images/modal-order/order-1-375.png@2x 2x
@@ -1130,6 +1130,21 @@
               />
               <img
                 src="./images/modal-order/order-1-375.png "
+                alt="pieces of chocolate"
+              /> -->
+              <source
+                srcset="/simply-chocolate/assets/test-jpg-e675fb9f.jpg 1x, /simply-chocolate/assets/test-jpg-e675fb9f.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="
+                  ../images/modal-order/test-jpg.jpg  1x,
+                  ./images/modal-order/test-jpg.jpg2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/images/modal-order/test-jpg.jpg "
                 alt="pieces of chocolate"
               />
             </picture>
@@ -1227,45 +1242,42 @@
       </label>
       <label class="buy-now-label">
         <span class="buy-now__label-title">Phone number</span>
-        <span class="buy-now-label-phone-input">
-          <div class="buy-now__phone-wrapper">
-            <input
-              type="tel"
-              name="user-phone"
-              required
-              pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
-              title="xx-xxx-xx-xx"
-              class="buy-now__label-input"
-              placeholder="Phone number"
-            />
 
-            <svg class="buy-now__icon-flag">
-              <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-flag-dsktp-tab"></use>
-            </svg>
-            <span class="buy-now__label-phone">+380</span>
-          </div>
-        </span>
+        <div class="buy-now__phone-wrapper">
+          <input
+            type="tel"
+            name="user-phone"
+            required
+            pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+            title="xx-xxx-xx-xx"
+            class="buy-now__label-input"
+            placeholder="Phone number"
+          />
+
+          <svg class="buy-now__icon-flag">
+            <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-flag-dsktp-tab"></use>
+          </svg>
+          <span class="buy-now__label-phone">+380</span>
+        </div>
       </label>
       <label class="buy-now-label">
         <span class="buy-now__label-title">Card number</span>
-        <span class="buy-now-label-input-cards">
-          <div class="buy-now__card-wrapper">
-            <input
-              type="number"
-              name="user-card"
-              required
-              pattern="^[0-9]{12}"
-              title="xxxxxxxxxxxxxxxx"
-              class="buy-now__label-input"
-              placeholder="Enter card"
-            />
-            <svg class="buy-now-icon-card">
-              <use
-                href="/simply-chocolate/assets/icons-26dd3768.svg#icon-payment-icon-dsktp-tab"
-              ></use>
-            </svg>
-          </div>
-        </span>
+        <div class="buy-now__card-wrapper">
+          <input
+            type="number"
+            name="user-card"
+            required
+            pattern="^[0-9]{12}"
+            title="xxxxxxxxxxxxxxxx"
+            class="buy-now__label-input"
+            placeholder="Enter card"
+          />
+          <svg class="buy-now-icon-card">
+            <use
+              href="/simply-chocolate/assets/icons-26dd3768.svg#icon-payment-icon-dsktp-tab"
+            ></use>
+          </svg>
+        </div>
       </label>
       <label class="buy-now-label">
         <span class="buy-now__label-title">Comment</span>
