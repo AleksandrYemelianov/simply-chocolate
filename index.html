@@ -23,8 +23,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-eaa49eda.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-ea69cbee.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-4f48b921.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-f3a4ab2d.css">
   </head>
   <body>
     <div class="body-wrap">
@@ -1012,9 +1012,10 @@
         each piece is a work of art that is sure to please.
       </p>
       <button
-        data-modal-open-expl
+        
         type="button"
-        class="subscribe-btn button button__accent"
+        class="subscribe-btn button button__accent js-open-modal"
+      data-modal="5"
       >
         Subscribe
       </button>
@@ -1085,8 +1086,8 @@
 
 
       <!-- ======= modal ======= -->
-      <div class="modal__thank modal">
-  <button class="modal__thank--close" type="button">
+      <div class="modal__thank modal" data-modal="4">
+  <button class="modal__thank--close  js-modal-close" type="button">
     <svg class="modal__thank--close-icon" width="16" height="16">
       <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-mob"></use>
     </svg>
@@ -1097,10 +1098,10 @@
     discount on all our products.
   </p>
 </div>
-<div class="overlay"></div>
+<div class="overlay js-overlay-modal"></div>
 
-      <div class="modal__thank modal__feedback modal">
-  <button class="modal__thank--close modal__cross" type="button">
+      <div class="modal__thank modal__feedback modal" data-modal="4">
+  <button class="modal__thank--close js-modal-close" type="button">
     <svg class="modal__thank--close-icon" width="16" height="16">
       <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-mob"></use>
     </svg>
@@ -1111,7 +1112,7 @@
   </h2>
   <p class="modal__thank--text">We are so happy to hear from you!</p>
 </div>
-<div class="overlay"></div>
+<div class="overlay  js-overlay-modal"></div>
 
       <div class="buy-now__modal modal" data-modal="1">
   <button type="button" class="buy-now__btn-close js-modal-close">
@@ -1290,8 +1291,8 @@
       ></textarea>
     </label>
     <button
-      class="button button__accent buy-now__btn-submit js-close-modal"
-      data-modal="1"
+      class="button button__accent buy-now__btn-submit js-open-modal"
+      data-modal="4"
       type="submit"
     >
       Submit
@@ -1301,72 +1302,81 @@
 <div class="overlay js-overlay-modal"></div>
 
       <div class="modal review__modal" data-modal="2">
-    <button type="button" class="review__btn-close js-modal-close">
-      <svg class="review__icon-close">
-        <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
-      </svg>
-    </button>
-    <h2 class="review__title">
-      leave a review about
-      <span class="title__accent">our chocolate</span>
-    </h2>
-    <form class="review__form">
-      <label class="review__label">
-        <input
-          type="text"
-          name="user_name"
-          required
-          class="review__label-input"
-          placeholder="Name"
-          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
-          minlength="2"
-        />
-      </label>
-      <label class="review__label">
-        <input
-          type="email"
-          name="user_email"
-          required
-          class="review__label-input"
-          placeholder="Enter your email"
-          pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+  <button type="button" class="review__btn-close js-modal-close">
+    <svg class="review__icon-close">
+      <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
+    </svg>
+  </button>
+  <h2 class="review__title">
+    leave a review <br />
+    about
+    <span class="title__accent">our chocolate</span>
+  </h2>
+  <h3 class="title review__title-tablet">
+    leave a review about
+    <span class="title__accent">our chocolate</span>
+  </h3>
+  <form class="review__form">
+    <label class="review__label">
+      <input
+        type="text"
+        name="user_name"
+        required
+        class="review__label-input"
+        placeholder="Name"
+        pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+        minlength="2"
+      />
+    </label>
+    <label class="review__label">
+      <input
+        type="email"
+        name="user_email"
+        required
+        class="review__label-input"
+        placeholder="Enter your email"
+        pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
         title="mail@mail.com"
+      />
+    </label>
+    <label class="review__label review__phone-label">
+      <span class="review__label-phone-input"
+        ><input
+          type="tel"
+          name="user-phone"
+          required
+          pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+          title="xx-xxx-xx-xx"
+          class="review__label-input"
+          placeholder="Phone number"
         />
-      </label>
-      <label class="review__label">
-        <span class="review__label-phone-input"
-          ><input
-            type="tel"
-            name="user-phone"
-            required
-            pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
-            title="xx-xxx-xx-xx"
-            class="review__label-input"
-            placeholder="Phone number"
-          />
-          <svg class="review__icon-flag">
-            <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-flag-dsktp-tab"></use>
-          </svg>
-          <span class="review__label-phone">+380</span>
-        </span>
-      </label>
-      <label class="review__label">
-        <textarea
-          name="user_message"
-          placeholder="Enter text"
-          class="review__message"
-        ></textarea>
-      </label>
-      <button type="submit" class="button button__accent review__btn-submit  js-modal-close" data-modal="2">
-        Send
-      </button>
-    </form>
+        <svg class="review__icon-flag">
+          <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-flag-dsktp-tab"></use>
+        </svg>
+        <span class="review__label-phone">+380</span>
+      </span>
+    </label>
+    <label class="review__label">
+      <textarea
+        name="user_message"
+        placeholder="Enter text"
+        class="review__message"
+      ></textarea>
+    </label>
+    <button
+      type="submit"
+      class="button button__accent review__btn-submit js-open-modal"
+      data-modal="4"
+    >
+      Send
+    </button>
+  </form>
 </div>
 <div class="overlay js-overlay-modal"></div>
-      <div data-modal-expl class="backdrop__modal-expl is-hidden">
-  <!-- class="backdrop is-hidden" -->
-  <div class="modal-expl">
-    <button data-modal-close-expl class="modal-exp__btn--close" type="button">
+
+        <!-- class="backdrop is-hidden" -->
+  <div class="modal-expl modal" data-modal="5">
+    <button data-modal-close-expl class="modal-exp__btn--close  js-modal-close" type="button">
       <svg class="modal-exp__close--icon" width="12" height="12">
         <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-mob"></use>
       </svg>
@@ -1416,7 +1426,8 @@
           <span class="title__accent">new chocolate</span>
           first! -->
   <!-- id="modal-expl__form" -->
-</div>
+
+<div class="overlay js-overlay-modal"></div>
 
     </div>
     <!-- ========= JS ======== -->
