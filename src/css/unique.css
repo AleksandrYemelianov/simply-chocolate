@@ -38,7 +38,7 @@ color: var(--primary-dark-color);
     position: relative;
 }
 .unique-photo {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 .unuqie-window {
     position: relative;
@@ -65,9 +65,6 @@ color: var(--primary-dark-color);
 .unique-item.nuts {
 background-color: var(--primary-background-color);
 border-radius: 15px;
-}
-.unique-item img {
-    display: block;
 }
 .unique-item-text {
     font-weight: 600;
@@ -159,7 +156,7 @@ overflow: hidden;
         width: 335px;
     }
     .unique-photo {
-        padding-left: 40px;
+        margin-left: 40px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -204,7 +201,7 @@ overflow: hidden;
         width: 270px;
     }
     .unique-photo {
-        padding-left: 0;
+        margin-left: 0;
     }
     .unique-button-window {
         gap: 4px;
