@@ -1,79 +1,88 @@
-.buy-now-backdrop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.buy-now__backdrop {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--secondary-light-color);
-  background-color: rgba(46, 47, 66, 0.7);
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  z-index: 2;
   transition: opacity var(--transition);
 }
 
-.buy-now-backdrop.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.buy-now-modal {
-  position: relative;
-  vertical-align: middle;
+.buy-now__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 311px;
-  max-width: 100%;
-  height: 1007px;
-  max-height: 100%;
-  transform: scale(0);
-  background: var(--background-color);
-  border-radius: 15px;
+  height: 100vh;
+
   padding: 32px 24px;
-  overflow-y: scroll;
-  transition: transform var(--transition);
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--accent-color);
+  border-radius: 15px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 1;
+  background-color: var(--background-color);
+}
+@media screen and (min-width: 768px) {
+  .buy-now__modal {
+    width: 609px;
+  }
 }
 
-.buy-now-backdrop.is-open .buy-now-modal {
-  transform: scale(1);
+.buy-now__backdrop.is-hidden .buy-now__modal {
+  opacity: 0;
+  transition: opacity var(--transition);
 }
 
-.buy-now-modal::-webkit-scrollbar {
-  width: 3px;
-}
-
-.buy-now-modal::-webkit-scrollbar-track {
-  background-color: inherit;
-}
-
-.buy-now-modal::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
-
-.buy-now-btn-close {
-  background-color: inherit;
-  border: none;
-
+.buy-now__btn-close {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  padding: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
 
-  position: absolute;
-  top: 14px;
-  right: 14px;
+  color: var(--primary-dark-color);
+  background-color: transparent;
+  border: none;
+
+  transition: transform var(--transition), color var(--transition);
+}
+@media screen and (min-width: 768px) {
+  .buy-now__btn-close {
+    top: 28px;
+    right: 28px;
+  }
 }
 
-.buy-now-icon-close {
+.buy-now__btn-close:hover,
+.buy-now__btn-close:focus {
+  transform: scale(1.3);
+  color: var(--accent-color);
+}
+
+.buy-now__icon-close {
+  display: block;
   width: 24px;
   height: 24px;
-  stroke: var(--text-main-color);
+  stroke: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__icon-close {
+    width: 28px;
+    height: 28px;
+  }
 }
 
-.buy-now-title {
+.buy-now__title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -81,359 +90,125 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
 
-  color: var(--accent-color);
+  color: var(--primary-dark-color);
   margin-bottom: 32px;
 }
 
-.buy-now-title-second {
-  color: var(--primary-dark-color);
+.buy-now__title--accent {
+  color: var(--accent-color);
 }
 
-.buy-now-modal-form {
+.buy-now__list {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 18px;
-}
+  justify-content: center;
 
-.buy-now-slider-text {
-  padding: 8px 29px;
-  white-space: nowrap;
-  width: 96px;
-  margin: 0 auto;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
-  color: var(--primary-dark-color);
-  background: var(--background-color);
-  border: 1px solid var(--secondary-dark-color);
-  border-radius: 100px;
-  margin-top: 16px;
-}
-
-.buy-now-label {
-  margin-bottom: 18px;
-}
-
-.buy-now-label-title {
-  display: block;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.1666;
-  letter-spacing: -0.02em;
-  color: var(--text-main-color);
-  margin-bottom: 8px;
-}
-
-.buy-now-label-input {
-  width: 263px;
-  max-width: 100%;
-  padding: 14px 18px;
-  border: 1.5px solid var(--secondary-dark-color);
-  background-color: inherit;
-  border-radius: 8px;
-  font-size: 14px;
-  line-height: 1.214;
-  letter-spacing: -0.02em;
-  color: var(--text-main-color);
-}
-
-.buy-now-label-input::placeholder {
-  font-size: 14px;
-  line-height: 1.214;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
-}
-
-.buy-now-first {
   margin-bottom: 14px;
 }
 
-.buy-now-phone-decor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: -24%;
-  left: 18px;
+.buy-now__thumb {
+  text-align: center;
+  padding: 32px 32px 28px;
+
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
 }
 
-.buy-now-label-phone-input {
+.buy-now__wrapper {
+  margin-bottom: 16px;
+}
+
+.buy-now__btn {
+  padding: 8px 27px;
+  background: var(--background-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+
+  transition: background var(--transition), border var(--transition);
+}
+
+.buy-now__btn:hover,
+.buy-now__btn:focus {
+  color: var(--primary-light-color);
+  border: 1px solid transparent;
+  background-color: var(--accent-color);
+}
+
+.buy-now__pagination {
+  width: 13px;
+  height: 13px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+/* ========== FORM ========== */
+.buy-now__label-title {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+
+  color: var(--primary-dark-color);
+}
+
+.buy-now__label-input {
+  height: 45px;
+  width: 100%;
+
+  padding: 14px 18px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+.buy-now__phone-wrapper {
   position: relative;
 }
 
-.buy-now-label-phone-input > .buy-now-label-input-phone {
-  padding-left: 106px;
-}
+.buy-now__label-phone {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-.buy-now-label-icon {
-  max-width: 24px;
-  max-height: 24px;
-}
-
-/* .buy-now-line {
-  width: 1.5px;
-  height: 25px;
-  max-height: 100%;
-  background-color: rgba(64, 64, 64, 0.3);
-  margin-left: 9px;
-} */
-.buy-now-label-phone-number {
+  left: 50px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.214;
-  display: flex;
+  line-height: 1.21;
 
-  letter-spacing: -0.02em;
-  color: #000000;
-  margin-left: 8px;
+  color: var(--primary-dark-color);
 }
 
-.buy-now-phone-decor::after {
-  content: '';
-  width: 1.5px;
-  height: 25px;
-  max-height: 100%;
-  background-color: rgba(64, 64, 64, 0.3);
-  margin-left: 9px;
+.buy-now__icon-flag {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 18px;
+  transform: translateY(-50%);
+}
+.buy-now__phone-wrapper .buy-now__label-input {
+  padding: 10px 29px 10px 106px;
 }
 
-.buy-now-label-input-cards {
+.buy-now__card-wrapper {
   position: relative;
 }
 
 .buy-now-icon-card {
-  width: 32px;
-  max-width: 100%;
-  height: 21px;
-
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 14px;
+  transform: translateY(-50%);
+
+  width: 22px;
+  height: 13px;
 }
 
-.buy-now-message {
-  display: block;
-  resize: none;
-  width: 100%;
-  height: 91px;
-  font-size: 14px;
-  line-height: 1.214;
-  letter-spacing: -0.02em;
-  border-radius: 8px;
-  border: 1.5px solid var(--secondary-dark-color);
-  padding: 8px 16px;
-  color: var(--text-main-color);
-  background-color: inherit;
-}
-
-.buy-now-message::placeholder {
-  font-size: 14px;
-  line-height: 1.214;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
-}
-
-.buy-now-btn-submit {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
-  color: var(--background-secondary-color);
+/* =========== BUTTON ========== */
+.buy-now__btn-submit {
   padding: 12px 28px;
-  width: 109px;
-  max-width: 100%;
-  background: var(--accent-color);
-  border-radius: 100px;
-  transition: color var(--transition), background-color var(--transition);
-}
-
-.buy-now-btn-submit:hover,
-.buy-now-btn-submit:focus {
-  color: var(--accent-color);
-  background-color: var(--accent-active-color);
-  transition: color var(--transition), background-color var(--transition);
-}
-
-@media screen and (max-width: 767px) {
-  .buy-now-image-container {
-    display: none;
-  }
-
-  .buy-now-slider-container {
-    width: 231px;
-    max-width: 100%;
-    height: 257px;
-    max-height: 100%;
-    padding: 32px 32px 32px 28px;
-    background: var(--primary-light-color);
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 15px;
-    margin: 0 auto;
-    margin-bottom: 59px;
-    position: relative;
-    text-align: center;
-  }
-
-  .buy-now-slider-item {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  /* ====крапочки====== */
-  .buy-now-slider-container .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 13px;
-    position: absolute;
-    bottom: -28px;
-    transform: translate(50%);
-  }
-
-  .buy-now-slider-container .slick-dots li {
-    list-style: none;
-  }
-
-  /* Активная точка */
-  .buy-now-slider-container .slick-dots li.slick-active button {
-    width: 28px;
-    height: 13px;
-    background-color: var(--accent-color);
-    border-radius: 15px;
-  }
-
-  /* Элемент точки */
-  .buy-now-slider-container .slick-dots li button {
-    font-size: 0;
-    width: 13px;
-    height: 13px;
-
-    background-color: rgba(17, 17, 17, 0.1);
-    border-radius: 50%;
-    border: none;
-  }
-
-  /* Ограничивающая оболочка */
-  .slick-list {
-    overflow: hidden;
-  }
-
-  /* Лента слайдов */
-  .slick-track {
-    display: flex;
-  }
-
-  /* =========================================== */
-}
-
-@media screen and (min-width: 768px) {
-  .buy-now-modal {
-    width: 609px;
-    padding: 48px;
-    margin: 0 auto;
-    height: 1058px;
-  }
-
-  .buy-now-slider-container {
-    display: none;
-  }
-
-  .buy-now-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    gap: 16px;
-  }
-
-  .buy-now-picture-container {
-    background: var(--primary-light-color);
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 15px;
-    padding: 24px 20px 18px 20px;
-  }
-
-  .buy-now-label-title {
-    font-size: 14px;
-    line-height: 1.28;
-  }
-
-  .buy-now-for-input {
-    display: flex;
-    gap: 21px;
-  }
-
-  .buy-now-label-input {
-    height: 66px;
-    max-height: 100%;
-    padding: 22px 24px;
-  }
-
-  .buy-now-first {
-    width: 246px;
-    max-width: 100%;
-  }
-
-  .buy-now-label-input-second {
-    width: 246px;
-    max-width: 100%;
-  }
-
-  .buy-now-label-input::placeholder {
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  .buy-now-label-phone-number {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  .buy-now-label-input-three {
-    width: 513px;
-    max-width: 100%;
-  }
-
-  .buy-now-label-phone-input > .buy-now-label-input-phone {
-    padding-left: 177px;
-  }
-
-  .buy-now-label-icon {
-    max-width: 32px;
-    max-height: 32px;
-  }
-
-  .buy-now-phone-decor {
-    top: 50%;
-    left: 24px;
-    transform: translateY(-50%);
-  }
-
-  .buy-now-phone-decor::after {
-    margin-left: 32px;
-  }
-
-  .buy-now-icon-card {
-    width: 44px;
-    height: 30px;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%);
-  }
-
-  .buy-now-message::placeholder {
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  .buy-now-message {
-    padding: 22px 24px;
-    height: 137px;
-  }
-
-  .buy-now-btn-submit {
-    padding: 14px 40px;
-    width: 133px;
-  }
 }
