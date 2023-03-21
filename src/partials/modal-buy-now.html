@@ -13,7 +13,7 @@
         <div class="buy-now__thumb">
           <div class="buy-now__wrapper">
             <picture>
-              <source
+              <!-- <source
                 srcset="
                   ./images/modal-order/order-1-375.png    1x,
                   ./images/modal-order/order-1-375.png@2x 2x
@@ -29,6 +29,24 @@
               />
               <img
                 src="./images/modal-order/order-1-375.png "
+                alt="pieces of chocolate"
+              /> -->
+              <source
+                srcset="
+                  ./images/modal-order/test-jpg.jpg 1x,
+                  ./images/modal-order/test-jpg.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="
+                  ../images/modal-order/test-jpg.jpg  1x,
+                  ./images/modal-order/test-jpg.jpg2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                src="/images/modal-order/test-jpg.jpg "
                 alt="pieces of chocolate"
               />
             </picture>
