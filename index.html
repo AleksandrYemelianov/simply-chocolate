@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate/assets/index-eaa49eda.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-19854b5a.css">
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-0b189c30.css">
   </head>
   <body>
     <div class="body-wrap">
@@ -978,7 +978,7 @@
     </div>
     <button
       class="button reviews-btn js-open-modal"
-      data-modal="3"
+      data-modal="2"
       type="button"
     >
       Leave a review
@@ -1071,8 +1071,8 @@
 
 
       <!-- ======= modal ======= -->
-      <div class="modal__thank modal" data-modal="2">
-  <button class="modal__thank--close modal__cross js-modal-close" type="button">
+      <div class="modal__thank modal">
+  <button class="modal__thank--close" type="button">
     <svg class="modal__thank--close-icon" width="16" height="16">
       <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-mob"></use>
     </svg>
@@ -1083,10 +1083,10 @@
     discount on all our products.
   </p>
 </div>
-<div class="overlay js-overlay-modal"></div>
+<div class="overlay"></div>
 
-      <div class="modal__thank modal__feedback modal" data-modal="4">
-  <button class="modal__thank--close modal__cross js-modal-close" type="button">
+      <div class="modal__thank modal__feedback modal">
+  <button class="modal__thank--close modal__cross" type="button">
     <svg class="modal__thank--close-icon" width="16" height="16">
       <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-mob"></use>
     </svg>
@@ -1097,11 +1097,10 @@
   </h2>
   <p class="modal__thank--text">We are so happy to hear from you!</p>
 </div>
-<div class="overlay js-overlay-modal"></div>
+<div class="overlay"></div>
 
-      <div class="buy-now__backdrop">
-  <div class="buy-now__modal">
-    <button type="button" class="buy-now__btn-close">
+      <div class="buy-now__modal modal" data-modal="1">
+  <button type="button" class="buy-now__btn-close js-modal-close">
       <svg class="buy-now__icon-close">
         <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-modal-close-dsktp-tab"></use>
       </svg>
@@ -1151,8 +1150,10 @@
           </div>
           <button class="button buy-now__btn" type="button">100 g</button>
         </div>
-      </li>
-      <!-- <li class="buy-now__item">
+        <button class="button buy-now__btn" type="button">100 g</button>
+      </div>
+    </li>
+    <!-- <li class="buy-now__item">
         <div class="buy-now__thumb">
           <picture>
             <source
@@ -1177,7 +1178,7 @@
           <button type="button">200 g</button>
         </div>
       </li> -->
-      <!-- <li class="buy-now__item">
+    <!-- <li class="buy-now__item">
         <div class="buy-now__thumb">
           <picture>
             <source
@@ -1202,47 +1203,47 @@
           <button type="button">300 g</button>
         </div>
       </li> -->
-    </ul>
-    <div class="buy-now__pagination"></div>
-    <form class="buy-now-modal-form">
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Personal information</span>
-        <div class="buy-now__input-wrapper">
-          <input
-            type="text"
-            name="username"
-            required
-            class="buy-now__label-input"
-            placeholder="Name"
-            pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
-            minlength="2"
-          />
-          <input
-            type="text"
-            name="user_surname"
-            required
-            class="buy-now__label-input"
-            placeholder="Surname"
-            pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
-            minlength="2"
-          />
-        </div>
-      </label>
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Email</span>
+  </ul>
+  <div class="buy-now__pagination"></div>
+  <form class="buy-now-modal-form">
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Personal information</span>
+      <div class="buy-now__input-wrapper">
         <input
-          type="email"
-          name="user_email"
+          type="text"
+          name="username"
           required
           class="buy-now__label-input"
-          placeholder="Enter your email"
-          pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-          title="mail@mail.com"
+          placeholder="Name"
+          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+          minlength="2"
         />
-      </label>
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Phone number</span>
-
+        <input
+          type="text"
+          name="user_surname"
+          required
+          class="buy-now__label-input"
+          placeholder="Surname"
+          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+          minlength="2"
+        />
+      </div>
+    </label>
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Email</span>
+      <input
+        type="email"
+        name="user_email"
+        required
+        class="buy-now__label-input"
+        placeholder="Enter your email"
+        pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        title="mail@mail.com"
+      />
+    </label>
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Phone number</span>
+      <span class="buy-now-label-phone-input">
         <div class="buy-now__phone-wrapper">
           <input
             type="tel"
@@ -1259,9 +1260,11 @@
           </svg>
           <span class="buy-now__label-phone">+380</span>
         </div>
-      </label>
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Card number</span>
+      </span>
+    </label>
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Card number</span>
+      <span class="buy-now-label-input-cards">
         <div class="buy-now__card-wrapper">
           <input
             type="number"
@@ -1278,92 +1281,91 @@
             ></use>
           </svg>
         </div>
-      </label>
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Comment</span>
-        <textarea
-          name="user_message"
-          placeholder="Enter text"
-          class="buy-now-message"
-        ></textarea>
-      </label>
-      <button
-        class="button button__accent buy-now__btn-submit js-open-modal"
-        data-modal="2"
-        type="submit"
-      >
-        Submit
-      </button>
-    </form>
-  </div>
+      </span>
+    </label>
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Comment</span>
+      <textarea
+        name="user_message"
+        placeholder="Enter text"
+        class="buy-now-message"
+      ></textarea>
+    </label>
+    <button
+      class="button button__accent buy-now__btn-submit js-close-modal"
+      data-modal="1"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
 </div>
+<div class="overlay js-overlay-modal"></div>
 
-      <div class="modal modal-leave-review" data-modal="3">
-  <div class="btn-wrap">
-    <button type="button" class="btn-close-leave-review js-modal-close">
-      <svg class="icon-close-modal">
+
+      <div class="modal review__modal" data-modal="2">
+    <button type="button" class="review__btn-close js-modal-close">
+      <svg class="review__icon-close">
         <use href=".src/images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
       </svg>
     </button>
-    <h2>
+    <h2 class="review__title">
       leave a review about
-      <span class="buy-now-title-accent">our chocolate</span>
+      <span class="review__title-accent">our chocolate</span>
     </h2>
-    <form class="buy-now-modal-form">
-      <label class="buy-now-label">
+    <form class="review__form">
+      <label class="review__label">
         <input
           type="text"
           name="user_name"
           required
-          class="buy-now-label-input buy-now-first"
+          class="review__input"
           placeholder="Name"
           pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
           minlength="2"
         />
       </label>
-      <label class="buy-now-label">
+      <label class="review__label">
         <input
           type="email"
           name="user_email"
           required
-          class="buy-now-label-input buy-now-label-input-three"
+          class="review__label-input"
           placeholder="Enter your email"
+          pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        title="mail@mail.com"
         />
       </label>
-      <label class="buy-now-label">
-        <span class="buy-now-label-phone-input"
+      <label class="review__label">
+        <span class="review__label-phone-input"
           ><input
             type="tel"
             name="user-phone"
             required
             pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
             title="xx-xxx-xx-xx"
-            class="buy-now-label-input buy-now-label-input-phone buy-now-label-input-three"
+            class="review__label-input"
             placeholder="Phone number"
           />
-          <div class="buy-now-phone-decor">
-            <svg class="buy-now-label-icon">
-              <use href="./src/images/svg/icons.svg#icon-flag-dsktp-tab"></use>
-            </svg>
-            <span class="buy-now-label-phone-number">+380</span>
-            <span class="buy-now-line"></span>
-          </div>
+          <svg class="review__icon-flag">
+            <use href="/simply-chocolate/assets/icons-26dd3768.svg#icon-flag-dsktp-tab"></use>
+          </svg>
+          <span class="review__label-phone">+380</span>
         </span>
       </label>
-      <label class="buy-now-label">
+      <label class="review__label">
         <textarea
           name="user_message"
           placeholder="Enter text"
-          class="buy-now-message"
+          class="review__message"
         ></textarea>
-      </div>
-      <button type="submit" class="button js-open-modal" data-modal="4">
+      </label>
+      <button type="submit" class="button button__accent review__btn-submit  js-modal-close" data-modal="2">
         Send
       </button>
     </form>
-  </div>
 </div>
-
+<div class="overlay js-overlay-modal"></div>
       <div data-modal-expl class="backdrop__modal-expl is-hidden">
   <!-- class="backdrop is-hidden" -->
   <div class="modal-expl">
