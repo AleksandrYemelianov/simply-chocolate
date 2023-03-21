@@ -30,14 +30,16 @@ color: var(--primary-dark-color);
 }
 .unique-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 .unique-item {
     position: relative;
+    width: 100%;
 }
 .unique-photo {
+    display: flex;
+    justify-content: center;
     margin-bottom: 25px;
 }
 .unuqie-window {
@@ -155,9 +157,6 @@ overflow: hidden;
     .unuqie-window {
         width: 335px;
     }
-    .unique-photo {
-        margin-left: 40px;
-    }
 }
 @media screen and (min-width: 768px) {
     .unique-title-text {
@@ -172,7 +171,9 @@ overflow: hidden;
     .unique-title {
         width: 486px;
     }
-    
+    .unique-item {
+        width: auto;
+    }
     .unique-flex-container {
         display: flex;
         flex-wrap: wrap;
