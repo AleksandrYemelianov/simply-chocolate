@@ -195,9 +195,8 @@
   z-index: 40;
   transform: translate(-50%, -50%);
 
-  overflow-y: auto;
-  overflow-x: hidden;
-
+  overflow: hidden;
+  
   opacity: 0;
   visibility: hidden;
 

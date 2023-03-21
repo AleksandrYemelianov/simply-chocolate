@@ -4,8 +4,7 @@
 
 .wrap-top-sellers {
   position: relative;
-  width: 335px;
-}
+  }
 
 .list-top-sellers {
   display: flex;
@@ -26,11 +25,11 @@
 
 .paragraph-top-sellers {
   position: absolute;
-  top: 46.5%;
+  top: 47%;
   left: 46%;
   transform: translate(-50%, -50%);
 
-  width: 306px;
+  width: 250px;
 
   font-size: 14px;
   line-height: 1.29;
@@ -40,6 +39,19 @@
 .btn-top-sellers {
   display: block;
   margin: 0 auto;
+}
+
+
+@media screen and (min-width: 375px) {
+.wrap-top-sellers {
+  width: 335px;
+}
+
+.paragraph-top-sellers {
+  top: 46.5%;
+
+  width: 306px;
+}
 }
 
 @media screen and (min-width: 768px) {

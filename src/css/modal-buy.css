@@ -2,6 +2,8 @@
   width: 311px;
   height: 95vh;
 
+  overflow-y: auto;
+
   padding: 32px 24px;
   margin-left: auto;
   margin-right: auto;
