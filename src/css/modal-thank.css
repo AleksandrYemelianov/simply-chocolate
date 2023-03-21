@@ -37,8 +37,10 @@
 }
 
 .modal__thank {
+  z-index: 40;
+
   width: 311px;
-  min-height: 350px;
+  height: 350px;
   padding: 84px 24px 84px 68px;
   border-radius: 15px;
 
