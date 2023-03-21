@@ -15,20 +15,31 @@ html {
   bottom: 50px;
   cursor: pointer;
   display: none;
-  font-size: 20px;
-  color: rgba(0, 51, 153, 0.5);
-  border: 1px solid rgba(0, 51, 153, 0.5);
-  background-color: #fff;
-  padding: 15px 10px;
+  fill: rgb(253, 146, 34, 0.8);
+  border: 1px solid rgb(253, 146, 34, 0.8);
+  background-color: var(--primary-light-color);
+  border-radius: 50%;
+  padding: 6px;
   z-index: 1000;
+  transition: var(--transition);
 }
 
 .go-top:hover {
-  color: rgba(0, 51, 153, 0.8);
-  border: 1px solid rgba(0, 51, 153, 0.8);
-  background-color: rgba(0, 51, 153, 0.15);
+  fill: var(--primary-light-color);
+  border: 1px solid rgb(253, 146, 34);
+  background-color: rgb(253, 146, 34, 0.8);
+}
+
+.scroll-item {
+  transform: rotate(-180deg);
 }
 
 .go-top--show {
-  display: block;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .go-top {
+    padding: 11px;
+  }
 }
