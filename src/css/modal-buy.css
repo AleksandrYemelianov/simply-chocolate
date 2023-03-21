@@ -132,6 +132,12 @@
 
   color: var(--primary-dark-color);
 }
+@media screen and (min-width: 768px) {
+  .buy-now__label-title {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
 
 .buy-now__label-input {
   height: 45px;
@@ -149,9 +155,28 @@
   border-radius: 8px;
   transition: border var(--transition);
 }
+@media screen and (min-width: 768px) {
+  .buy-now__label-input {
+    height: 66px;
+    padding: 22px 24px;
+
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
 
 .buy-now__input-wrapper .buy-now__label-input:not(:last-child) {
   margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__input-wrapper .buy-now__label-input:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .buy-now__input-wrapper {
+    display: flex;
+    gap: 14px;
+  }
 }
 
 .buy-now__label-input::placeholder {
@@ -161,19 +186,11 @@
 
   color: rgba(64, 64, 64, 0.3);
 }
-
-.buy-now__label-phone::after {
-  content: ' ';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 42px;
-
-  display: block;
-  width: 1.5px;
-  height: 25px;
-  background-color: rgba(17, 17, 17, 0.05);
-  border-radius: 2px;
+@media screen and (min-width: 768px) {
+  .buy-now__label-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .buy-now__label-input:focus {
@@ -197,6 +214,33 @@
 
   color: var(--primary-dark-color);
 }
+@media screen and (min-width: 768px) {
+  .buy-now__label-phone {
+    left: 74px;
+
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.buy-now__label-phone::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 42px;
+
+  display: block;
+  width: 1.5px;
+  height: 25px;
+  background-color: rgba(17, 17, 17, 0.05);
+  border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__label-phone::after {
+    left: 75px;
+  }
+}
 
 .buy-now__icon-flag {
   position: absolute;
@@ -206,10 +250,23 @@
 
   width: 24px;
   height: 18px;
-  transform: translateY(-50%);
 }
+@media screen and (min-width: 768px) {
+  .buy-now__icon-flag {
+    left: 24px;
+
+    width: 32px;
+    height: 24px;
+  }
+}
+
 .buy-now__phone-wrapper .buy-now__label-input {
   padding: 10px 29px 10px 106px;
+}
+@media screen and (min-width: 768px) {
+  .buy-now__phone-wrapper .buy-now__label-input {
+    padding: 22px 24px 22px 177px;
+  }
 }
 
 .buy-now__card-wrapper {
@@ -230,7 +287,15 @@
   height: 91px;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .buy-now__message {
+    height: 137px;
+  }
+}
 /* =========== BUTTON ========== */
-.buy-now__btn-submit {
-  padding: 12px 28px;
+
+@media screen and (max-width: 767px) {
+  .buy-now__btn-submit {
+    padding: 12px 28px;
+  }
 }
