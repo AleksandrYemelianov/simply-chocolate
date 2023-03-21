@@ -1,3 +1,7 @@
+.swiper-wrapper {
+  width: auto;
+  height: auto;
+}
 .our-products-card {
   margin-left: auto;
   margin-right: auto;
@@ -5,6 +9,7 @@
   padding-top: 32px;
   padding-right: 52px;
   padding-left: 52px;
+  padding-bottom: 32px;
   height: 364px;
   max-width: 335px;
   border-radius: 15px;
@@ -73,5 +78,10 @@
   }
   .our-products-title {
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-products-title {
+    margin-bottom: 32px;
   }
 }
