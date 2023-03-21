@@ -1,42 +1,41 @@
-<div class="buy-now__backdrop">
-  <div class="buy-now__modal">
-    <button type="button" class="buy-now__btn-close">
-      <svg class="buy-now__icon-close">
-        <use href="./images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
-      </svg>
-    </button>
-    <h2 class="buy-now__title">
-      <span class="buy-now__title--accent">Buy</span> Now
-    </h2>
-    <ul class="buy-now__list">
-      <li class="buy-now__item">
-        <div class="buy-now__thumb">
-          <div class="buy-now__wrapper">
-            <picture>
-              <source
-                srcset="
-                  ./images/modal-order/order-1-375.png    1x,
-                  ./images/modal-order/order-1-375.png@2x 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./images/modal-order/order-1-768.png    1x,
-                  ./images/modal-order/order-1-768.png@2x 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <img
-                src="./images/modal-order/order-1-375.png "
-                alt="pieces of chocolate"
-              />
-            </picture>
-          </div>
-          <button class="button buy-now__btn" type="button">100 g</button>
+<div class="buy-now__modal modal" data-modal="1">
+  <button type="button" class="buy-now__btn-close js-modal-close">
+    <svg class="buy-now__icon-close">
+      <use href="./images/svg/icons.svg#icon-modal-close-dsktp-tab"></use>
+    </svg>
+  </button>
+  <h2 class="buy-now__title">
+    <span class="buy-now__title--accent">Buy</span> Now
+  </h2>
+  <ul class="buy-now__list">
+    <li class="buy-now__item">
+      <div class="buy-now__thumb">
+        <div class="buy-now__wrapper">
+          <picture>
+            <source
+              srcset="
+                ./images/modal-order/order-1-375.png    1x,
+                ./images/modal-order/order-1-375.png@2x 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/modal-order/order-1-768.png    1x,
+                ./images/modal-order/order-1-768.png@2x 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/modal-order/order-1-375.png "
+              alt="pieces of chocolate"
+            />
+          </picture>
         </div>
-      </li>
-      <!-- <li class="buy-now__item">
+        <button class="button buy-now__btn" type="button">100 g</button>
+      </div>
+    </li>
+    <!-- <li class="buy-now__item">
         <div class="buy-now__thumb">
           <picture>
             <source
@@ -61,7 +60,7 @@
           <button type="button">200 g</button>
         </div>
       </li> -->
-      <!-- <li class="buy-now__item">
+    <!-- <li class="buy-now__item">
         <div class="buy-now__thumb">
           <picture>
             <source
@@ -86,101 +85,101 @@
           <button type="button">300 g</button>
         </div>
       </li> -->
-    </ul>
-    <div class="buy-now__pagination"></div>
-    <form class="buy-now-modal-form">
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Personal information</span>
-        <div class="buy-now__input-wrapper">
-          <input
-            type="text"
-            name="username"
-            required
-            class="buy-now__label-input"
-            placeholder="Name"
-            pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
-            minlength="2"
-          />
-          <input
-            type="text"
-            name="user_surname"
-            required
-            class="buy-now__label-input"
-            placeholder="Surname"
-            pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
-            minlength="2"
-          />
-        </div>
-      </label>
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Email</span>
+  </ul>
+  <div class="buy-now__pagination"></div>
+  <form class="buy-now-modal-form">
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Personal information</span>
+      <div class="buy-now__input-wrapper">
         <input
-          type="email"
-          name="user_email"
+          type="text"
+          name="username"
           required
           class="buy-now__label-input"
-          placeholder="Enter your email"
-          pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-          title="mail@mail.com"
+          placeholder="Name"
+          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+          minlength="2"
         />
-      </label>
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Phone number</span>
-        <span class="buy-now-label-phone-input">
-          <div class="buy-now__phone-wrapper">
-            <input
-              type="tel"
-              name="user-phone"
-              required
-              pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
-              title="xx-xxx-xx-xx"
-              class="buy-now__label-input"
-              placeholder="Phone number"
-            />
+        <input
+          type="text"
+          name="user_surname"
+          required
+          class="buy-now__label-input"
+          placeholder="Surname"
+          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+          minlength="2"
+        />
+      </div>
+    </label>
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Email</span>
+      <input
+        type="email"
+        name="user_email"
+        required
+        class="buy-now__label-input"
+        placeholder="Enter your email"
+        pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        title="mail@mail.com"
+      />
+    </label>
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Phone number</span>
+      <span class="buy-now-label-phone-input">
+        <div class="buy-now__phone-wrapper">
+          <input
+            type="tel"
+            name="user-phone"
+            required
+            pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+            title="xx-xxx-xx-xx"
+            class="buy-now__label-input"
+            placeholder="Phone number"
+          />
 
-            <svg class="buy-now__icon-flag">
-              <use href="./images/svg/icons.svg#icon-flag-dsktp-tab"></use>
-            </svg>
-            <span class="buy-now__label-phone">+380</span>
-          </div>
-        </span>
-      </label>
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Card number</span>
-        <span class="buy-now-label-input-cards">
-          <div class="buy-now__card-wrapper">
-            <input
-              type="number"
-              name="user-card"
-              required
-              pattern="^[0-9]{12}"
-              title="xxxxxxxxxxxxxxxx"
-              class="buy-now__label-input"
-              placeholder="Enter card"
-            />
-            <svg class="buy-now-icon-card">
-              <use
-                href="./images/svg/icons.svg#icon-payment-icon-dsktp-tab"
-              ></use>
-            </svg>
-          </div>
-        </span>
-      </label>
-      <label class="buy-now-label">
-        <span class="buy-now__label-title">Comment</span>
-        <textarea
-          name="user_message"
-          placeholder="Enter text"
-          class="buy-now-message"
-        ></textarea>
-      </label>
-      <button
-        class="button button__accent buy-now__btn-submit js-open-modal"
-        data-modal="2"
-        type="submit"
-      >
-        Submit
-      </button>
-    </form>
-  </div>
+          <svg class="buy-now__icon-flag">
+            <use href="./images/svg/icons.svg#icon-flag-dsktp-tab"></use>
+          </svg>
+          <span class="buy-now__label-phone">+380</span>
+        </div>
+      </span>
+    </label>
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Card number</span>
+      <span class="buy-now-label-input-cards">
+        <div class="buy-now__card-wrapper">
+          <input
+            type="number"
+            name="user-card"
+            required
+            pattern="^[0-9]{12}"
+            title="xxxxxxxxxxxxxxxx"
+            class="buy-now__label-input"
+            placeholder="Enter card"
+          />
+          <svg class="buy-now-icon-card">
+            <use
+              href="./images/svg/icons.svg#icon-payment-icon-dsktp-tab"
+            ></use>
+          </svg>
+        </div>
+      </span>
+    </label>
+    <label class="buy-now-label">
+      <span class="buy-now__label-title">Comment</span>
+      <textarea
+        name="user_message"
+        placeholder="Enter text"
+        class="buy-now-message"
+      ></textarea>
+    </label>
+    <button
+      class="button button__accent buy-now__btn-submit js-close-modal"
+      data-modal="1"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
 </div>
+<div class="overlay js-overlay-modal"></div>
