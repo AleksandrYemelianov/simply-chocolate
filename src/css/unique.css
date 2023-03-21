@@ -48,7 +48,7 @@ color: var(--primary-dark-color);
 }
 .unique-item.chocolate {
     background-color: var(--accent-color);
-    border-radius: 17px;
+    border-radius: 15px;
 }
 .unique-item.milk, .unique-item.sweet  {
     background-color: var(--primary-light-color);
@@ -60,7 +60,7 @@ color: var(--primary-dark-color);
  .unique-item.sweet:hover,
  .unique-item.sweet:focus
   {
-    border: 0px;
+    border-color: transparent;
 }
 .unique-item.nuts {
 background-color: var(--primary-background-color);
