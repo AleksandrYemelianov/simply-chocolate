@@ -166,10 +166,6 @@ transition: color var(--transition);
            
 
 
-
-
-
-
 @media screen and (min-width :768px){
         .footer-one{
             background:var(--primary-background-color);
