@@ -7,7 +7,7 @@
     url(../images/hero/hero-375-1x.jpg);
 
   background-color: var(--primary-background-color);
-
+  background-size: cover;
   position: relative;
   margin: 0 auto;
   border-radius: 30px;
