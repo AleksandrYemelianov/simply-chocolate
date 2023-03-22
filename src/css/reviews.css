@@ -3,8 +3,10 @@
 }
 
 .reviews-container {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .reviews-title {
@@ -17,23 +19,20 @@
 .reviews-title-accent {
   color: var(--accent-color);
 }
-/*
+
 .reviews-wrap {
   align-items: center;
   margin: auto;
-  list-style: none;
-  text-decoration: none;
-  min-width: 0;
 }
-*/
 
 .reviews-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 335px;
-  height: 242px;
-  
+  padding: 0;
+  max-width: 335px;
+  min-height: 242px;
+
 }
 
 .reviews-photo {
@@ -42,14 +41,16 @@
 }
 
 .reviews-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  max-width: 100%;
+  top: 42px;
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 56px;
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  top: 42px;
+  padding-bottom: 24px;
   background: var(--primary-light-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
@@ -66,25 +67,29 @@
 }
 
 .reviews-text {
+  margin: auto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
   letter-spacing: -0.02em;
   color: var(--secondary-dark-color);
-  padding-bottom: 42px;
+
 }
 
+/*------------------------------------*/
+
 .reviews-swiper {
-  width: 100%;
-  height: 275px;
+  max-width: 100%;
 }
 
 .swiper-pagination-reviews {
-  position: absolute;
+  position: static;
+  margin-top: 20px;
 
 }
 
+/*-----------------------------------*/
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -100,6 +105,7 @@
   background-color: var(--accent-color);
 }
 
+/*------------Button--------------------*/
 .reviews-btn {
   background-color: transparent;
   color: var(--primary-dark-color);
@@ -110,20 +116,16 @@
   border: 1px solid var(--accent-color);
   border-radius: 100px;
 }
+
 .reviews-btn:is(:hover, :focus) {
   background-color: var(--accent-color);
   color: var(--primary-light-color);
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-swiper {
-    width: 704px;
-    height: 285px;
-  }
 
   .reviews-card {
-    width: 344px;
-    
+    max-width: 344px;
   }
 
   .reviews-title {
@@ -136,13 +138,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .reviews-swiper {
-    width: 1136px;
-  }
 
   .reviews-card {
-    width: 360px;
+    max-width: 360px;
   }
 
-  
+
 }
