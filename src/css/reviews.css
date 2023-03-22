@@ -32,7 +32,6 @@
   padding: 0;
   max-width: 335px;
   min-height: 242px;
-
 }
 
 .reviews-photo {
@@ -74,7 +73,6 @@
   text-align: center;
   letter-spacing: -0.02em;
   color: var(--secondary-dark-color);
-
 }
 
 /*------------------------------------*/
@@ -86,7 +84,12 @@
 .swiper-pagination-reviews {
   position: static;
   margin-top: 20px;
+}
 
+@media screen and (min-width: 767px) {
+  .swiper-pagination-reviews {
+    margin-top: 32px;
+  }
 }
 
 /*-----------------------------------*/
@@ -123,7 +126,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .reviews-card {
     max-width: 344px;
   }
@@ -138,10 +140,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-
   .reviews-card {
     max-width: 360px;
   }
-
-
 }
