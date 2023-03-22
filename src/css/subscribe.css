@@ -1,119 +1,126 @@
 /* SUBSCRIBE */
 
 .subscribe-section {
-    padding-top: 62px;
-    padding-bottom: 62px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/subscribe/subcribe-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .subscribe-section {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-mobile@2x.jpg);
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .subscribe-section {
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/subscribe/subcribe-mobile@2x.jpg);
   }
 }
-   
 
 .subscribe-title {
-    width: 291px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    margin: auto;
-    margin-bottom: 24px;
-    color: var(--primary-light-color);
+  width: 291px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin: auto;
+  margin-bottom: 24px;
+  color: var(--primary-light-color);
 }
 .subscribe-text {
-    font-size: 14px;
-    line-height: 1.3;
-    text-align: center;
-    letter-spacing: -0.02em;
-    margin-bottom: 24px;
-    color:var(--primary-light-color);
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  color: var(--primary-light-color);
 }
 .subscribe-btn {
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 28px;
-    padding-right: 28px;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.2;
-    margin: 0 auto;
-    
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0 auto;
 }
 
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-    .subscribe-section {
-        padding-top: 72px;
-        padding-bottom: 72px;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-768.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .subscribe-section {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-768@2x.jpg);
+  .subscribe-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/subscribe/subcribe-768.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
-}
-   
-    .subscribe-title {
-        width: 378px;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 1.2;
-    }
 
-    .subscribe-text {
-        width: 467px;
-        margin: auto;
-        margin-bottom: 24px;
-        color: var(--primary-light-color);
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .subscribe-section {
+      background-size: cover;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../images/subscribe/subcribe-768@2x.jpg);
     }
+  }
 
-     .subscribe-btn {
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-family: inherit;
-        font-size: 18px;
-        line-height: 1.2;
-    } 
+  .subscribe-title {
+    width: 378px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .subscribe-text {
+    width: 467px;
+    margin: auto;
+    margin-bottom: 24px;
+    color: var(--primary-light-color);
+  }
+
+  .subscribe-btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.2;
+  }
 }
 
 /* DESCKTOP */
 
 @media screen and (min-width: 1200px) {
-    .subscribe-section {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-1200.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+  .subscribe-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/subscribe/subcribe-1200.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .subscribe-section {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subscribe/subcribe-1200@2x.jpg);
+      background-size: cover;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../images/subscribe/subcribe-1200@2x.jpg);
+    }
   }
 }
-
-}
-    
