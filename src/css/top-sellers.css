@@ -43,10 +43,6 @@
 
 
 @media screen and (min-width: 375px) {
-.wrap-top-sellers {
-  width: 335px;
-}
-
 .paragraph-top-sellers {
   top: 46.5%;
 
@@ -76,7 +72,7 @@
 
   .wrap-content-top-sellers {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .paragraph-top-sellers {
