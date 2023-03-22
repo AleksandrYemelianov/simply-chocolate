@@ -6,9 +6,6 @@
     ),
     url(../images/hero/hero-375-1x.jpg);
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: var(--primary-background-color);
 
   position: relative;
