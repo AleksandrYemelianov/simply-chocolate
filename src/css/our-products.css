@@ -5,6 +5,7 @@
   padding-top: 32px;
   padding-right: 52px;
   padding-left: 52px;
+  padding-bottom: 32px;
   height: 364px;
   max-width: 335px;
   border-radius: 15px;
@@ -51,7 +52,7 @@
   height: 33px;
   width: 94px;
   border-radius: 100px;
-  background-color: #fafafa;
+  background-color: var(--background-color);
   border: 1px solid #1111111a;
   font-size: 14px;
   font-weight: 600;
@@ -59,12 +60,6 @@
   letter-spacing: 0em;
   text-align: center;
 }
-/* -------------------- Swiper ------------------------ */
-.our-products-pagination {
-  position: static;
-  margin-top: 20px;
-}
-/* ---------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .our-products-card {
     max-width: 270px;
@@ -73,5 +68,10 @@
   }
   .our-products-title {
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-products-title {
+    margin-bottom: 50px;
   }
 }

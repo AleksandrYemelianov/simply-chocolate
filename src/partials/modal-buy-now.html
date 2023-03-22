@@ -12,20 +12,20 @@
           <picture>
             <source
               srcset="
-                /images/modal-order/order-1-375.png    1x,
-                /images/modal-order/order-1-375.png@2x 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <source
-              srcset="
-                /images/modal-order/order-1-768.png    1x,
-                /images/modal-order/order-1-768.png@2x 2x
+                ./images/modal-order/choc3-768-1x.png 1x,
+                ./images/modal-order/choc3-768-2x.png 2x
               "
               media="(min-width: 768px)"
             />
+            <source
+              srcset="
+                ./images/modal-order/choc3-375-1x.png 1x,
+                ./images/modal-order/choc3-375-2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
             <img
-              src="/images/modal-order/order-1-375.png "
+              src="./images/modal-order/choc3-375-1x.png"
               alt="pieces of chocolate"
             />
           </picture>
@@ -33,26 +33,26 @@
         <button class="button buy-now__btn" type="button">100 g</button>
       </div>
     </li>
-    <!-- <li class="buy-now__item">
+    <li class="buy-now__item">
       <div class="buy-now__thumb">
         <div class="buy-now__wrapper">
           <picture>
             <source
               srcset="
-                /images/modal-order/order-2-375.png    1x,
-                /images/modal-order/order-2-375.png@2x 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <source
-              srcset="
-                /images/modal-order/order-2-768.png    1x,
-                /images/modal-order/order-2-768.png@2x 2x
+                ./images/modal-order/choc2-768-1x.png 1x,
+                ./images/modal-order/choc2-768-2x.png 2x
               "
               media="(min-width: 768px)"
             />
+            <source
+              srcset="
+                ./images/modal-order/choc2-375-1x.png 1x,
+                ./images/modal-order/choc2-375-2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
             <img
-              src="/images/modal-order/order-2-375.png "
+              src="./images/modal-order/choc2-375-1x.png"
               alt="pieces of chocolate"
             />
           </picture>
@@ -66,27 +66,27 @@
           <picture>
             <source
               srcset="
-                /images/modal-order/order-3-375.png    1x,
-                /images/modal-order/order-3-375.png@2x 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <source
-              srcset="
-                /images/modal-order/order-3-768.png    1x,
-                /images/modal-order/order-3-768.png@2x 2x
+                ./images/modal-order/choc1-768-1x.png 1x,
+                ./images/modal-order/choc1-768-2x.png 2x
               "
               media="(min-width: 768px)"
             />
+            <source
+              srcset="
+                ./images/modal-order/choc1-375-1x.png 1x,
+                ./images/modal-order/choc1-375-2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
             <img
-              src="/images/modal-order/order-3-375.png "
+              src="./images/modal-order/choc1-375-1x.png"
               alt="pieces of chocolate"
             />
           </picture>
         </div>
         <button class="button buy-now__btn" type="button">300 g</button>
       </div>
-    </li> -->
+    </li>
   </ul>
 
   <div class="buy-now__pagination"></div>
@@ -175,8 +175,8 @@
       ></textarea>
     </label>
     <button
-      class="button button__accent buy-now__btn-submit js-close-modal"
-      data-modal="1"
+      class="button button__accent buy-now__btn-submit js-modal-close js-open-modal"
+      data-modal="4"
       type="submit"
     >
       Submit

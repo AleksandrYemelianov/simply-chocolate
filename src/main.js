@@ -1,3 +1,3 @@
 import './js/menu';
+import './js/scroll';
 import './js/modal';
-import './js/modal-expl';

@@ -12,6 +12,8 @@
 /* всі підключення стилів тільки нижче  */
 /* Header */
 @import url('./header.css');
+/* Scroll */
+@import url('./scroll.css');
 /* Hero */
 @import url('./hero.css');
 /* Advantages */

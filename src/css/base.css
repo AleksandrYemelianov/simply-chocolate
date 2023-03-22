@@ -10,7 +10,7 @@
 
   /* ===== color ===== */
   --primary-dark-color: #111111;
-    --primary-light-color: #ffffff;
+  --primary-light-color: #ffffff;
   --secondary-dark-color: rgba(17, 17, 17, 0.7);
   --secondary-light-color: rgba(255, 255, 255, 0.7);
   --accent-color: #fd9222;
@@ -170,4 +170,41 @@
 
 .title__accent {
   color: var(--accent-color);
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+
+  transition: opacity var(--transition), background-color var(--transition);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 40;
+  transform: translate(-50%, -50%);
+
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: transform var(--transition);
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.go-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  display: none;
+  fill: rgb(253, 146, 34, 0.8);
+  border: 1px solid rgb(253, 146, 34, 0.8);
+  background-color: var(--primary-light-color);
+  border-radius: 50%;
+  padding: 6px;
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.go-top:hover {
+  fill: var(--primary-light-color);
+  border: 1px solid rgb(253, 146, 34);
+  background-color: rgb(253, 146, 34, 0.8);
+}
+
+.scroll-item {
+  transform: rotate(-180deg);
+}
+
+.go-top--show {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .go-top {
+    padding: 11px;
+  }
+}

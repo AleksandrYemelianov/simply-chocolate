@@ -1,28 +1,26 @@
-new Swiper('.our-products-swiper', {
-  direction: 'horizontal',
-
-  loop: true,
-
-  slidesPerView: 'auto',
-
-  spaceBetween: 18,
-
-  freeMode: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2.5,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
-  },
+$(document).ready(function () {
+  $('.our-products-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    speed: 300,
+    infinite: true,
+    autoplaySpeed: 10000,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+    ],
+  });
 });
