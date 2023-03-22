@@ -24,7 +24,15 @@
   max-width: 336px;
 }
 
+/* .advantages-item:last-child {
+  padding-bottom: 16px;
+}
+
 .advantages-item:not(:last-child) {
+  margin-bottom: 20px;
+} */
+
+.advantages-item {
   margin-bottom: 20px;
 }
 
@@ -45,10 +53,6 @@
 
 .advantages-content {
   max-width: 308px;
-}
-
-.advantages-content:last-child {
-  padding-bottom: 16px;
 }
 
 .advantages-item-title {
@@ -93,7 +97,7 @@
     width: 336px;
   }
 
-  .advantages-item:not(:last-child) {
+  .advantages-item {
     margin-bottom: 0;
   }
 
