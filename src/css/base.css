@@ -185,7 +185,7 @@
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
 
-  transition: opacity var(--transition), background-color var(--transition);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .modal {
@@ -200,7 +200,7 @@
   opacity: 0;
   visibility: hidden;
 
-  transition: transform var(--transition);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .modal.active,
