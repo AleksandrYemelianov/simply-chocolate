@@ -52,7 +52,7 @@
 }
 .our-products-price {
   padding-top: 8px;
-  height: 33px;
+  padding-bottom: 8px;
   width: 94px;
   border-radius: 100px;
   background-color: var(--background-color);
