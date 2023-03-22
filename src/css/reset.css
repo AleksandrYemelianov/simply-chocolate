@@ -10,8 +10,18 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url(./font/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./font/Montserrat-VariableFont_wght.ttf);
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
